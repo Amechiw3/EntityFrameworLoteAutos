@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LoteAutosGit.Models.auto" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAQAAAAAAAAAAAAAAAgEACAAAAAAAAIEAI=</HashCode>
+      <FileName>Models\auto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoteAutosGit.Models.comprador">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAACEAAAAACAgAAIIAAAAAAAAEAQAAAA=</HashCode>
+      <FileName>Models\comprador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoteAutosGit.Models.galeria">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACCAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\galeria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoteAutosGit.Models.nivel" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAABAAAACAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\nivel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoteAutosGit.Models.pago">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\pago.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoteAutosGit.Models.permiso" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\permiso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoteAutosGit.Models.permisonegado" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\permisonegado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoteAutosGit.Models.propietario" Collapsed="true">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAAACEAAAAACAgACAIAACAAAAAEAQAQAI=</HashCode>
+      <FileName>Models\propietario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoteAutosGit.Models.usuario">
+    <Position X="3.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAEAACkAAAAACAgAAAIAAAAAAAAEgQAAQA=</HashCode>
+      <FileName>Models\usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoteAutosGit.Models.venta">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\venta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -64,6 +64,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\auto.cs" />
+    <Compile Include="Models\comprador.cs" />
+    <Compile Include="Models\galeria.cs" />
+    <Compile Include="Models\nivel.cs" />
+    <Compile Include="Models\pago.cs" />
+    <Compile Include="Models\permiso.cs" />
+    <Compile Include="Models\permisonegado.cs" />
+    <Compile Include="Models\propietario.cs" />
+    <Compile Include="Models\usuario.cs" />
+    <Compile Include="Models\venta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -75,6 +85,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Models\DiagramModel.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -91,7 +102,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
