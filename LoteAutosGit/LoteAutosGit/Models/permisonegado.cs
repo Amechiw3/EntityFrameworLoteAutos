@@ -12,14 +12,20 @@ using System.Data.Entity;
 namespace LoteAutosGit.Models
 {
     [Table("PermisosNegados")]
-    class permisonegado
+    public class permisonegado
     {
+        [Key]
         public int idpermisonegadonivel { get; set; }
-
+        
         public Boolean status { get; set; }
         
-        //TODO: Llave Permisos
+        public permiso permisos { get; set; }
 
-        //TODO: llave Nivel
+        public nivel niveles { get; set; }
+
+        public permisonegado()
+        {
+            this.status = true;
+        }
     }
 }

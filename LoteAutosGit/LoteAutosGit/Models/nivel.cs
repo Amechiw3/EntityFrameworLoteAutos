@@ -12,16 +12,27 @@ using System.Data.Entity;
 namespace LoteAutosGit.Models
 {
     [Table("Niveles")]
-    class nivel
+    public class nivel
     {
+        [Key]
         public int idnivel { get; set; }
 
+        [StringLength(64)]
+        [Required(ErrorMessage = "Se requiere el nombre del nivel")]
         public String nombre { get; set; }
-
+        
         public Boolean status { get; set; }
 
+        [StringLength(128)]
         public String descripcion { get; set; }
 
-        //Llave de usuario
+        public ICollection<usuario> usuarios { get; set; }
+
+        public ICollection<permisonegado> permisosnegados { get; set; }
+
+        public nivel()
+        {
+            this.status = true;
+        }
     }
 }

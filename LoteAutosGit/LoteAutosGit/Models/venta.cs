@@ -14,12 +14,23 @@ namespace LoteAutosGit.Models
     [Table("Ventas")]
     public class venta
     {
+        [Key]
         public int idventa { get; set; }
-
+        
+        [Required(ErrorMessage = "Se requiere la fecha de venta")]
         public DateTime fecha { get; set; }
 
-        //TODO: Llave foranea de autos
-        //TODO: Llave foranea de comprador
-        //TODO: Llave foranea de usuario
+        public Boolean status { get; set; }
+
+        public auto autos { get; set; }
+
+        public comprador compradores { get; set; }
+
+        public usuario usuarios { get; set; }
+
+        public venta()
+        {
+            this.status = true;
+        }
     }
 }

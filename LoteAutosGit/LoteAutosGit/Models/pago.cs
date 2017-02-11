@@ -12,13 +12,23 @@ using System.Data.Entity;
 namespace LoteAutosGit.Models
 {
     [Table("Pagos")]
-    class pago
+    public class pago
     {
+        [Key]
         public int idpago { get; set; }
 
+        [Required(ErrorMessage = "Se requiere la fecha de pago")]
         public DateTime fecha { get; set; }
 
-        //TODO: Llave foranea hacia autos
-        //TODO: Llave foranea hacia propietarios
+        public Boolean status { get; set; }
+        
+        public auto autos { get; set; }
+
+        public propietario propietarios { get; set; }
+
+        public pago()
+        {
+            this.status = true;
+        }
     }
 }

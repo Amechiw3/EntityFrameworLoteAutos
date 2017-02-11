@@ -12,12 +12,22 @@ using System.Data.Entity;
 namespace LoteAutosGit.Models
 {
     [Table("Galerias")]
-    class galeria
+    public class galeria
     {
+        [Key]
         public int idgaleria { get; set; }
 
+        [StringLength(64)]
+        [Required(ErrorMessage = "Se requiere alguna fotografia")]
         public String fotografia { get; set; }
 
-        //TODO: llave foranea para autos
+        public Boolean status { get; set; }
+        
+        public auto autos { get; set; }
+
+        public galeria()
+        {
+            this.status = true;
+        }
     }
 }
