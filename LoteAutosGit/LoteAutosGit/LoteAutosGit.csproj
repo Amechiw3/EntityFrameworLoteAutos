@@ -66,6 +66,7 @@
     </Compile>
     <Compile Include="Models\auto.cs" />
     <Compile Include="Models\comprador.cs" />
+    <Compile Include="Models\DataModel.cs" />
     <Compile Include="Models\galeria.cs" />
     <Compile Include="Models\nivel.cs" />
     <Compile Include="Models\pago.cs" />
