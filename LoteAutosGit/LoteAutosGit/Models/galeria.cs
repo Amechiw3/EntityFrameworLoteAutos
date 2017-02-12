@@ -23,7 +23,7 @@ namespace LoteAutosGit.Models
 
         public Boolean status { get; set; }
         
-        public auto autos { get; set; }
+        public virtual auto autos { get; set; }
 
         public galeria()
         {

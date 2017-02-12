@@ -1,73 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LoteAutosGit.Models.auto" Collapsed="true">
-    <Position X="6.75" Y="0.5" Width="1.5" />
+  <Class Name="LoteAutosGit.Models.auto">
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAAAAAAAAAAQAAAAAAAAAAAAAAAgEACAAAAAAAAIEAI=</HashCode>
+      <HashCode>BAAAAAAAGAAQAAAAAAAAAAAAAIAgEACAAAAAAAAIEAM=</HashCode>
       <FileName>Models\auto.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoteAutosGit.Models.comprador">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAACEAAAAACAgAAIIAAAAAAAAEAQAAAA=</HashCode>
+      <HashCode>AAACAAAAEAAAAACEAAAAACAgAAIIAAAAAAAAEAQAAAA=</HashCode>
       <FileName>Models\comprador.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoteAutosGit.Models.galeria">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Position X="11.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACCAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAABAAACCAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\galeria.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoteAutosGit.Models.nivel" Collapsed="true">
     <Position X="0.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAABAAAACAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAABAAAACAAAEBAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
       <FileName>Models\nivel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoteAutosGit.Models.pago">
-    <Position X="8.75" Y="2" Width="1.5" />
+    <Position X="11.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAwAAAAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>Models\pago.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoteAutosGit.Models.permiso" Collapsed="true">
     <Position X="0.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAg=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAEBAAAAAAABAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Models\permiso.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoteAutosGit.Models.permisonegado" Collapsed="true">
     <Position X="0.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAggAAAA=</HashCode>
       <FileName>Models\permisonegado.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoteAutosGit.Models.propietario" Collapsed="true">
-    <Position X="6.75" Y="3.25" Width="1.5" />
+  <Class Name="LoteAutosGit.Models.propietario">
+    <Position X="8.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACIAAAAAAAAACEAAAAACAgACAIAACAAAAAEAQAQAI=</HashCode>
+      <HashCode>AAACIAAACAAAAACEAAAABCAgACAIAACAAAAAEAQAQAI=</HashCode>
       <FileName>Models\propietario.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoteAutosGit.Models.usuario">
-    <Position X="3.75" Y="2.25" Width="1.5" />
+    <Position X="2.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAEAACkAAAAACAgAAAIAAAAAAAAEgQAAQA=</HashCode>
+      <HashCode>AAACAAAAEAAEAACkAAAAACAgAAAIAAAAAAAAEgwAAQA=</HashCode>
       <FileName>Models\usuario.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoteAutosGit.Models.venta">
-    <Position X="3.75" Y="0.5" Width="1.5" />
+    <Position X="5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAQAAAAAAAAAABAAICAAAAAAAAAACAAAAAAA=</HashCode>
       <FileName>Models\venta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoteAutosGit.Models.DataModel">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

@@ -26,9 +26,9 @@ namespace LoteAutosGit.Models
         [StringLength(128)]
         public String descripcion { get; set; }
 
-        public ICollection<usuario> usuarios { get; set; }
+        public virtual ICollection<usuario> usuarios { get; set; }
 
-        public ICollection<permisonegado> permisosnegados { get; set; }
+        public virtual ICollection<permisonegado> permisosnegados { get; set; }
 
         public nivel()
         {

@@ -45,11 +45,11 @@ namespace LoteAutosGit.Models
 
         public propietario propietarios { get; set; }
 
-        public ICollection<galeria> galerias { get; set; }
+        public virtual ICollection<galeria> galerias { get; set; }
 
-        public ICollection<pago> pagos { get; set; }
+        public virtual ICollection<pago> pagos { get; set; }
 
-        public ICollection<venta> ventas { get; set; }
+        public virtual ICollection<venta> ventas { get; set; }
 
     }
 }

@@ -69,9 +69,9 @@ namespace LoteAutosGit.Models
         [Required(ErrorMessage = "Se requiere una fotografia para el propietario")]
         public String fotografia { get; set; }
         
-        public ICollection<auto> autos { get; set; }
+        public virtual ICollection<auto> autos { get; set; }
 
-        public ICollection<pago> pagos { get; set; }
+        public virtual ICollection<pago> pagos { get; set; }
 
     }
 }

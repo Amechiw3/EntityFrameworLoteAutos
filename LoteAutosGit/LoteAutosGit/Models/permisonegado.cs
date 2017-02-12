@@ -19,9 +19,9 @@ namespace LoteAutosGit.Models
         
         public Boolean status { get; set; }
         
-        public permiso permisos { get; set; }
+        public virtual permiso permisos { get; set; }
 
-        public nivel niveles { get; set; }
+        public virtual nivel niveles { get; set; }
 
         public permisonegado()
         {
