@@ -15,6 +15,17 @@ namespace LoteAutosGit.Models
     {
         public DataModel() : base("DataModel")  {   }
 
+        public virtual DbSet<auto> autos { get; set; }
+        public virtual DbSet<comprador> compradores { get; set; }
+        public virtual DbSet<galeria> galerias  { get; set; }
+        public virtual DbSet<nivel> niveles { get; set; }
+        public virtual DbSet<pago> pagos { get; set; }
+        public virtual DbSet<permiso> permisos { get; set; }
+        public virtual DbSet<permisonegado> permisosnegados { get; set; }
+        public virtual DbSet<propietario> propietarios { get; set; }
+        public virtual DbSet<usuario> usuarios { get; set; }
+        public virtual DbSet<venta> ventas { get; set; }
+        
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

@@ -68,9 +68,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702141420351_INICIAL.cs" />
-    <Compile Include="Migrations\201702141420351_INICIAL.Designer.cs">
-      <DependentUpon>201702141420351_INICIAL.cs</DependentUpon>
+    <Compile Include="Migrations\201702141429329_INICIAL.cs" />
+    <Compile Include="Migrations\201702141429329_INICIAL.Designer.cs">
+      <DependentUpon>201702141429329_INICIAL.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\auto.cs" />
@@ -98,8 +98,8 @@
     <Compile Include="Views\propietario.Designer.cs">
       <DependentUpon>propietario.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Migrations\201702141420351_INICIAL.resx">
-      <DependentUpon>201702141420351_INICIAL.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702141429329_INICIAL.resx">
+      <DependentUpon>201702141429329_INICIAL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

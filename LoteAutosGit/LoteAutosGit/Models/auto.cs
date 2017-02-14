@@ -50,7 +50,5 @@ namespace LoteAutosGit.Models
         public virtual ICollection<pago> pagos { get; set; }
 
         public virtual ICollection<venta> ventas { get; set; }
-
-
     }
 }

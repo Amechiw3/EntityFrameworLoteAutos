@@ -13,7 +13,7 @@ namespace LoteAutosGit.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201702141420351_INICIAL"; }
+            get { return "201702141429329_INICIAL"; }
         }
         
         string IMigrationMetadata.Source
