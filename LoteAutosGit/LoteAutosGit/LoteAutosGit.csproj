@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Controllers\clsManejoAutos.cs" />
     <Compile Include="Controllers\clsManejoPropietarios.cs" />
+    <Compile Include="Controllers\clsPago.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
