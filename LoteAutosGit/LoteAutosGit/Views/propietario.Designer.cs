@@ -28,82 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pcbFoto = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtINE = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtPais = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtCiudad = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtColonia = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.t = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtNcasa = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtCalle = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtApmaterno = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAppaterno = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFoto = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtNacionalidad = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtColor = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtPlaca = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txtNserie = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.txtModelo = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbFoto)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pcbFoto
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 176);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pcbFoto.Location = new System.Drawing.Point(6, 16);
+            this.pcbFoto.Name = "pcbFoto";
+            this.pcbFoto.Size = new System.Drawing.Size(144, 176);
+            this.pcbFoto.TabIndex = 0;
+            this.pcbFoto.TabStop = false;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.txtINE);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.txtPais);
+            this.groupBox1.Controls.Add(this.btnFoto);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.txtCiudad);
+            this.groupBox1.Controls.Add(this.pcbFoto);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtColonia);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.t);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtNcasa);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtCalle);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtApmaterno);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtAppaterno);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -111,12 +111,12 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // textBox10
+            // txtINE
             // 
-            this.textBox10.Location = new System.Drawing.Point(757, 45);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(221, 26);
-            this.textBox10.TabIndex = 19;
+            this.txtINE.Location = new System.Drawing.Point(757, 45);
+            this.txtINE.Name = "txtINE";
+            this.txtINE.Size = new System.Drawing.Size(221, 26);
+            this.txtINE.TabIndex = 19;
             // 
             // label10
             // 
@@ -127,12 +127,12 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "INE";
             // 
-            // textBox8
+            // txtPais
             // 
-            this.textBox8.Location = new System.Drawing.Point(659, 151);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(321, 26);
-            this.textBox8.TabIndex = 17;
+            this.txtPais.Location = new System.Drawing.Point(659, 151);
+            this.txtPais.Name = "txtPais";
+            this.txtPais.Size = new System.Drawing.Size(321, 26);
+            this.txtPais.TabIndex = 17;
             // 
             // label8
             // 
@@ -143,12 +143,12 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Pais";
             // 
-            // textBox9
+            // txtCiudad
             // 
-            this.textBox9.Location = new System.Drawing.Point(404, 151);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(249, 26);
-            this.textBox9.TabIndex = 15;
+            this.txtCiudad.Location = new System.Drawing.Point(404, 151);
+            this.txtCiudad.Name = "txtCiudad";
+            this.txtCiudad.Size = new System.Drawing.Size(249, 26);
+            this.txtCiudad.TabIndex = 15;
             // 
             // label9
             // 
@@ -159,12 +159,12 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Ciudad";
             // 
-            // textBox7
+            // txtColonia
             // 
-            this.textBox7.Location = new System.Drawing.Point(169, 150);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(229, 26);
-            this.textBox7.TabIndex = 13;
+            this.txtColonia.Location = new System.Drawing.Point(169, 150);
+            this.txtColonia.Name = "txtColonia";
+            this.txtColonia.Size = new System.Drawing.Size(229, 26);
+            this.txtColonia.TabIndex = 13;
             // 
             // label7
             // 
@@ -175,12 +175,12 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Colonia";
             // 
-            // textBox4
+            // t
             // 
-            this.textBox4.Location = new System.Drawing.Point(577, 98);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(401, 26);
-            this.textBox4.TabIndex = 11;
+            this.t.Location = new System.Drawing.Point(577, 98);
+            this.t.Name = "t";
+            this.t.Size = new System.Drawing.Size(401, 26);
+            this.t.TabIndex = 11;
             // 
             // label4
             // 
@@ -191,12 +191,12 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Avenida";
             // 
-            // textBox5
+            // txtNcasa
             // 
-            this.textBox5.Location = new System.Drawing.Point(404, 98);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 26);
-            this.textBox5.TabIndex = 9;
+            this.txtNcasa.Location = new System.Drawing.Point(404, 98);
+            this.txtNcasa.Name = "txtNcasa";
+            this.txtNcasa.Size = new System.Drawing.Size(167, 26);
+            this.txtNcasa.TabIndex = 9;
             // 
             // label5
             // 
@@ -207,12 +207,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "N° Calle";
             // 
-            // textBox6
+            // txtCalle
             // 
-            this.textBox6.Location = new System.Drawing.Point(169, 98);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(229, 26);
-            this.textBox6.TabIndex = 7;
+            this.txtCalle.Location = new System.Drawing.Point(169, 98);
+            this.txtCalle.Name = "txtCalle";
+            this.txtCalle.Size = new System.Drawing.Size(229, 26);
+            this.txtCalle.TabIndex = 7;
             // 
             // label6
             // 
@@ -223,12 +223,12 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Calle";
             // 
-            // textBox3
+            // txtApmaterno
             // 
-            this.textBox3.Location = new System.Drawing.Point(529, 45);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(222, 26);
-            this.textBox3.TabIndex = 5;
+            this.txtApmaterno.Location = new System.Drawing.Point(529, 45);
+            this.txtApmaterno.Name = "txtApmaterno";
+            this.txtApmaterno.Size = new System.Drawing.Size(222, 26);
+            this.txtApmaterno.TabIndex = 5;
             // 
             // label3
             // 
@@ -239,12 +239,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Apellido Materno";
             // 
-            // textBox2
+            // txtAppaterno
             // 
-            this.textBox2.Location = new System.Drawing.Point(324, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 26);
-            this.textBox2.TabIndex = 3;
+            this.txtAppaterno.Location = new System.Drawing.Point(324, 45);
+            this.txtAppaterno.Name = "txtAppaterno";
+            this.txtAppaterno.Size = new System.Drawing.Size(199, 26);
+            this.txtAppaterno.TabIndex = 3;
             // 
             // label2
             // 
@@ -255,12 +255,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Apellido Paterno";
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(169, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 26);
-            this.textBox1.TabIndex = 1;
+            this.txtNombre.Location = new System.Drawing.Point(169, 45);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(149, 26);
+            this.txtNombre.TabIndex = 1;
             // 
             // label1
             // 
@@ -271,30 +271,30 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
-            // button1
+            // btnFoto
             // 
-            this.button1.Location = new System.Drawing.Point(6, 198);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 39);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Tomar Foto";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnFoto.Location = new System.Drawing.Point(6, 198);
+            this.btnFoto.Name = "btnFoto";
+            this.btnFoto.Size = new System.Drawing.Size(144, 39);
+            this.btnFoto.TabIndex = 2;
+            this.btnFoto.Text = "Tomar Foto";
+            this.btnFoto.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox11);
+            this.groupBox2.Controls.Add(this.txtObservaciones);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.textBox12);
+            this.groupBox2.Controls.Add(this.txtNacionalidad);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox13);
+            this.groupBox2.Controls.Add(this.txtColor);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBox14);
+            this.groupBox2.Controls.Add(this.txtPlaca);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.textBox17);
+            this.groupBox2.Controls.Add(this.txtNserie);
             this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.textBox18);
+            this.groupBox2.Controls.Add(this.txtModelo);
             this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.textBox20);
+            this.groupBox2.Controls.Add(this.txtMarca);
             this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Location = new System.Drawing.Point(12, 271);
             this.groupBox2.Name = "groupBox2";
@@ -302,13 +302,13 @@
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
             // 
-            // textBox11
+            // txtObservaciones
             // 
-            this.textBox11.Location = new System.Drawing.Point(169, 164);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(809, 96);
-            this.textBox11.TabIndex = 19;
+            this.txtObservaciones.Location = new System.Drawing.Point(169, 164);
+            this.txtObservaciones.Multiline = true;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(809, 96);
+            this.txtObservaciones.TabIndex = 19;
             // 
             // label11
             // 
@@ -319,12 +319,12 @@
             this.label11.TabIndex = 18;
             this.label11.Text = "Observaciones";
             // 
-            // textBox12
+            // txtNacionalidad
             // 
-            this.textBox12.Location = new System.Drawing.Point(495, 97);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(483, 26);
-            this.textBox12.TabIndex = 17;
+            this.txtNacionalidad.Location = new System.Drawing.Point(495, 97);
+            this.txtNacionalidad.Name = "txtNacionalidad";
+            this.txtNacionalidad.Size = new System.Drawing.Size(483, 26);
+            this.txtNacionalidad.TabIndex = 17;
             // 
             // label12
             // 
@@ -335,12 +335,12 @@
             this.label12.TabIndex = 16;
             this.label12.Text = "Nacionalidad";
             // 
-            // textBox13
+            // txtColor
             // 
-            this.textBox13.Location = new System.Drawing.Point(324, 97);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(165, 26);
-            this.textBox13.TabIndex = 15;
+            this.txtColor.Location = new System.Drawing.Point(324, 97);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.Size = new System.Drawing.Size(165, 26);
+            this.txtColor.TabIndex = 15;
             // 
             // label13
             // 
@@ -351,12 +351,12 @@
             this.label13.TabIndex = 14;
             this.label13.Text = "Color";
             // 
-            // textBox14
+            // txtPlaca
             // 
-            this.textBox14.Location = new System.Drawing.Point(169, 97);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(149, 26);
-            this.textBox14.TabIndex = 13;
+            this.txtPlaca.Location = new System.Drawing.Point(169, 97);
+            this.txtPlaca.Name = "txtPlaca";
+            this.txtPlaca.Size = new System.Drawing.Size(149, 26);
+            this.txtPlaca.TabIndex = 13;
             // 
             // label14
             // 
@@ -367,12 +367,12 @@
             this.label14.TabIndex = 12;
             this.label14.Text = "Placa";
             // 
-            // textBox17
+            // txtNserie
             // 
-            this.textBox17.Location = new System.Drawing.Point(700, 41);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(278, 26);
-            this.textBox17.TabIndex = 7;
+            this.txtNserie.Location = new System.Drawing.Point(700, 41);
+            this.txtNserie.Name = "txtNserie";
+            this.txtNserie.Size = new System.Drawing.Size(278, 26);
+            this.txtNserie.TabIndex = 7;
             // 
             // label17
             // 
@@ -383,12 +383,12 @@
             this.label17.TabIndex = 6;
             this.label17.Text = "Numero de serie";
             // 
-            // textBox18
+            // txtModelo
             // 
-            this.textBox18.Location = new System.Drawing.Point(427, 41);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(267, 26);
-            this.textBox18.TabIndex = 5;
+            this.txtModelo.Location = new System.Drawing.Point(427, 41);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(267, 26);
+            this.txtModelo.TabIndex = 5;
             // 
             // label18
             // 
@@ -399,12 +399,12 @@
             this.label18.TabIndex = 4;
             this.label18.Text = "Modelo";
             // 
-            // textBox20
+            // txtMarca
             // 
-            this.textBox20.Location = new System.Drawing.Point(169, 41);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(252, 26);
-            this.textBox20.TabIndex = 1;
+            this.txtMarca.Location = new System.Drawing.Point(169, 41);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(252, 26);
+            this.txtMarca.TabIndex = 1;
             // 
             // label20
             // 
@@ -447,7 +447,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "propietario";
             this.Text = "propietario";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbFoto)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -458,43 +458,43 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pcbFoto;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtINE;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtPais;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtCiudad;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtColonia;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox t;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtNcasa;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtCalle;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtApmaterno;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAppaterno;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFoto;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtNacionalidad;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtColor;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox txtNserie;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
