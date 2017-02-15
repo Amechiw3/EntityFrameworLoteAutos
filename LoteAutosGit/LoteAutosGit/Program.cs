@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using LoteAutosGit.Views;
+
 namespace LoteAutosGit
 {
     static class Program
@@ -16,7 +18,7 @@ namespace LoteAutosGit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new propietario());
         }
     }
 }
