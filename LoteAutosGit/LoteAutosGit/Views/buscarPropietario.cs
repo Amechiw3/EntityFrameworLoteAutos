@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using LoteAutosGit.Controllers;
+using System.IO;
+
 namespace LoteAutosGit.Views
 {
     public partial class buscarPropietario : Form
@@ -15,6 +18,34 @@ namespace LoteAutosGit.Views
         public buscarPropietario()
         {
             InitializeComponent();
+            this.dgvDatosPropietario.AutoGenerateColumns = false;
+        }
+
+        private void buscarPropietario_Load(object sender, EventArgs e)
+        {
+            clsManejoPropietarios.getall(dgvDatosPropietario);
+        }
+
+        public void cargarimagen()
+        {/*
+            foreach (DataGridViewRow item in dgvDatosPropietario.Rows)
+            {
+                this.dgvDatosPropietario.Rows[item.Index].Cells["fotografia"]= Image.FromFile(Image.FromFile(Directory.GetCurrentDirectory() + @"\Propietario\" + r.fotografia)
+            }*/
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            this.dgvDatosPropietario.Rows.Clear();
+            dgvDatosPropietario.AllowUserToAddRows = true;
+
+            clsManejoPropietarios.searchPRopietario(dgvDatosPropietario, txtNombre.Text);
+        }
+
+        private void btnNuevoPropietario_Click(object sender, EventArgs e)
+        {
+            var nuevopropietario = new Addpropietario();
+            nuevopropietario.ShowDialog();
         }
     }
 }

@@ -11,6 +11,7 @@ namespace LoteAutosGit.Controllers
 {
     class clsManejoAutos
     {
+
         public static auto searchNSerie(string NSerie)
         {
             try
@@ -29,6 +30,10 @@ namespace LoteAutosGit.Controllers
             try
             {
                 var ctx = new DataModel();
+                //propietario datos = clsManejoPropietarios.returnPropietario(propietario);
+                //ctx.propietarios.Attach(datos);
+                //dauto.propietarios = datos;
+                
                 if (dauto.idauto > 0) //Actualizar
                 {
                     ctx.Entry(dauto).State = EntityState.Modified;

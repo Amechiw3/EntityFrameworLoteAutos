@@ -62,7 +62,7 @@ namespace LoteAutosGit.Tools
             webcam.Config2();
         }
 
-        public static void SaveImageCapture(Image image)
+        public static string SaveImageCapture(Image image)
         {
             var s = new SaveFileDialog();
             var rnd = new Random();
@@ -78,6 +78,7 @@ namespace LoteAutosGit.Tools
             FileStream fstream = new FileStream(archivo, FileMode.Create);
             image.Save(fstream, ImageFormat.Jpeg);
             fstream.Close();
+            return filename + ".png";
         }
 
         public static void SaveImage(PictureBox pcFoto)

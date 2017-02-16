@@ -121,11 +121,11 @@
     <Compile Include="Views\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\propietario.cs">
+    <Compile Include="Views\Addpropietario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\propietario.Designer.cs">
-      <DependentUpon>propietario.cs</DependentUpon>
+    <Compile Include="Views\Addpropietario.Designer.cs">
+      <DependentUpon>Addpropietario.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Migrations\201702141429329_INICIAL.resx">
       <DependentUpon>201702141429329_INICIAL.cs</DependentUpon>
@@ -145,8 +145,8 @@
     <EmbeddedResource Include="Views\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\propietario.resx">
-      <DependentUpon>propietario.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Addpropietario.resx">
+      <DependentUpon>Addpropietario.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Models\DiagramModel.cd" />
     <None Include="packages.config" />
