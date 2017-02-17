@@ -26,14 +26,6 @@ namespace LoteAutosGit.Views
             clsManejoPropietarios.getall(dgvDatosPropietario);
         }
 
-        public void cargarimagen()
-        {/*
-            foreach (DataGridViewRow item in dgvDatosPropietario.Rows)
-            {
-                this.dgvDatosPropietario.Rows[item.Index].Cells["fotografia"]= Image.FromFile(Image.FromFile(Directory.GetCurrentDirectory() + @"\Propietario\" + r.fotografia)
-            }*/
-        }
-
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
             this.dgvDatosPropietario.Rows.Clear();

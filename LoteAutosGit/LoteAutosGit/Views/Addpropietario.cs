@@ -60,9 +60,11 @@ namespace LoteAutosGit.Views
                     datos.colonia = txtColonia.Text;
                     datos.ciudad = txtCiudad.Text;
                     datos.pais = txtPais.Text;
-
                     datos.fotografia = Webcam.SaveImageCapture(pcbFoto.Image);
-                    clsManejoPropietarios.SavePropietario(datos);
+                    //clsManejoPropietarios.SavePropietario(datos);
+
+                    //DataModel ctx = new DataModel();
+                    //ctx.propietarios.Attach(datos);
 
                     var auto = new auto();
                     auto.marca = txtMarca.Text;
@@ -77,12 +79,14 @@ namespace LoteAutosGit.Views
                 }
                 else
                 {
-
+                    errorINE.Clear();
+                    errorINE.SetError(txtNserie, "Numero de serie duplicado");
                 }
             }
             else
             {
-
+                errorINE.Clear();
+                errorINE.SetError(txtINE, "Codigo de INE duplicado");
             }
         }
 
