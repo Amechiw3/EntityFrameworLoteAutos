@@ -65,6 +65,13 @@ namespace LoteAutosGit.Models
         [Required(ErrorMessage = "Se requiere la contraseña del usuario")]
         public String password { get; set; }
 
+        public Boolean status { get; set; }
+
+        public usuario()
+        {
+            status = true;
+        }
+
         public virtual ICollection<venta> ventas { get; set; }
 
         public virtual nivel niveles { get; set; }

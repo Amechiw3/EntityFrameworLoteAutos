@@ -59,7 +59,7 @@
   <Class Name="LoteAutosGit.Models.usuario">
     <Position X="2.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAEAAEAACkAAAAACAgAAAIAAAAAAAAEgwAAQA=</HashCode>
+      <HashCode>AAQCAAAAEAAEAACkAAAAACAgAAAIAAAAAAAAEgwAAQA=</HashCode>
       <FileName>Models\usuario.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -73,7 +73,7 @@
   <Class Name="LoteAutosGit.Models.DataModel">
     <Position X="5" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAGAAAAAAAAAABBAAIEIAAAAAAAAACAggAAAE=</HashCode>
       <FileName>Models\DataModel.cs</FileName>
     </TypeIdentifier>
   </Class>

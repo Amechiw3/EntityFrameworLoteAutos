@@ -8,13 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using LoteAutosGit.Controllers;
-
 namespace LoteAutosGit.Views
 {
-    public partial class frmLogin : Form
+    public partial class frmNewUser : Form
     {
-        public frmLogin()
+        public frmNewUser()
         {
             InitializeComponent();
         }

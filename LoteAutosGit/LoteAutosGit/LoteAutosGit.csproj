@@ -81,8 +81,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\clsGaleria.cs" />
+    <Compile Include="Controllers\ClsManejadorUsers.cs" />
     <Compile Include="Controllers\clsManejoAutos.cs" />
     <Compile Include="Controllers\clsManejoPropietarios.cs" />
+    <Compile Include="Controllers\ClsManejoSession.cs" />
     <Compile Include="Controllers\clsPago.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -127,6 +129,24 @@
     <Compile Include="Views\Addpropietario.Designer.cs">
       <DependentUpon>Addpropietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmMainSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmMainSistema.Designer.cs">
+      <DependentUpon>frmMainSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmNewUser.Designer.cs">
+      <DependentUpon>frmNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Migrations\201702141429329_INICIAL.resx">
       <DependentUpon>201702141429329_INICIAL.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +167,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Addpropietario.resx">
       <DependentUpon>Addpropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmMainSistema.resx">
+      <DependentUpon>frmMainSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmNewUser.resx">
+      <DependentUpon>frmNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Models\DiagramModel.cd" />
     <None Include="packages.config" />
