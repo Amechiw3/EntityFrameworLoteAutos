@@ -100,6 +100,21 @@ namespace LoteAutosGit.Views
             }
             else //Agregar nuevo propietario
             {
+                var prop = new propietario();
+                prop.nombre = txtNombre.Text;
+                prop.appaterno = txtApPaterno.Text;
+                prop.apmaterno = txtApMateno.Text;
+                prop.ine = txtINE.Text;
+                prop.telefono = txtTelefono.Text;
+                prop.correo = txtCorreo.Text;
+                prop.calle = txtCalle.Text;
+                prop.ncasa = txtNoCasa.Text;
+                prop.avenida = txtAvenida.Text;
+                prop.colonia = txtColonia.Text;
+                prop.ciudad = txtCiudad.Text;
+                prop.pais = txtPais.Text;
+                prop.fotografia = Webcam.SaveImageCapture(pcbFoto.Image);
+
                 auto datos = new auto();
                 datos.marca = txtMarca.Text;
                 datos.modelo = txtModelo.Text;
