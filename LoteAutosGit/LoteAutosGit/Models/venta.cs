@@ -17,7 +17,8 @@ namespace LoteAutosGit.Models
     {
         [Key]
         public int idventa { get; set; }
-        
+
+        [StringLength(64)]
         [Required(ErrorMessage = "Se requiere la fecha de venta")]
         public DateTime fecha { get; set; }
 

@@ -8,10 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoteAutosGit.Views
-{
+namespace LoteAutosGit.Views;
+   
+
     public partial class AddVenta : Form
     {
+
+
         public AddVenta()
         {
             InitializeComponent();
