@@ -8,21 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoteAutosGit.Views { 
-   
-
-    public partial class AddVenta : Form
+namespace LoteAutosGit.Views
+{
+    public partial class FrmPago : Form
     {
-
-
-        public AddVenta()
+        public FrmPago()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
