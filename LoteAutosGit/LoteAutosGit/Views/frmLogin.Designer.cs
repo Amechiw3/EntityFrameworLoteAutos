@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_nickname = new System.Windows.Forms.TextBox();
+            this.txt_pass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btn_Cancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -46,19 +46,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario";
             // 
-            // textBox1
+            // txt_nickname
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(398, 26);
-            this.textBox1.TabIndex = 1;
+            this.txt_nickname.Location = new System.Drawing.Point(16, 32);
+            this.txt_nickname.Name = "txt_nickname";
+            this.txt_nickname.Size = new System.Drawing.Size(398, 26);
+            this.txt_nickname.TabIndex = 1;
             // 
-            // textBox2
+            // txt_pass
             // 
-            this.textBox2.Location = new System.Drawing.Point(16, 84);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(398, 26);
-            this.textBox2.TabIndex = 3;
+            this.txt_pass.Location = new System.Drawing.Point(16, 84);
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.Size = new System.Drawing.Size(398, 26);
+            this.txt_pass.TabIndex = 3;
             // 
             // label2
             // 
@@ -70,28 +70,28 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Password";
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(12, 116);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(402, 43);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAdd.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(12, 116);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(402, 43);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Text = "Aceptar";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btn_Cancel
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(12, 165);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(402, 43);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_Cancel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_Cancel.ForeColor = System.Drawing.Color.White;
+            this.btn_Cancel.Location = new System.Drawing.Point(12, 165);
+            this.btn_Cancel.Name = "btn_Cancel";
+            this.btn_Cancel.Size = new System.Drawing.Size(402, 43);
+            this.btn_Cancel.TabIndex = 4;
+            this.btn_Cancel.Text = "Cancelar";
+            this.btn_Cancel.UseVisualStyleBackColor = false;
             // 
             // frmLogin
             // 
@@ -99,11 +99,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(426, 218);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btn_Cancel);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_nickname);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -119,10 +119,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_nickname;
+        private System.Windows.Forms.TextBox txt_pass;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btn_Cancel;
     }
 }

@@ -30,6 +30,10 @@ namespace LoteAutosGit.Models
         public String apmaterno { get; set; }
 
         [StringLength(64)]
+        [Required(ErrorMessage = "Se requiere número identificador")]
+        public String Ine { get; set; }
+
+        [StringLength(64)]
         [Required(ErrorMessage = "Se requiere la calle del comprador")]
         public String calle { get; set; }
 

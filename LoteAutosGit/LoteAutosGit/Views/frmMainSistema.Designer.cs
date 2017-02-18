@@ -34,7 +34,7 @@
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.propietariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.autosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registroCompradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.compradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             this.ventasToolStripMenuItem,
             this.propietariosToolStripMenuItem,
             this.autosToolStripMenuItem,
-            this.registroCompradorToolStripMenuItem});
+            this.compradorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(584, 24);
@@ -84,11 +84,11 @@
             this.autosToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.autosToolStripMenuItem.Text = "Autos";
             // 
-            // registroCompradorToolStripMenuItem
+            // compradorToolStripMenuItem
             // 
-            this.registroCompradorToolStripMenuItem.Name = "registroCompradorToolStripMenuItem";
-            this.registroCompradorToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
-            this.registroCompradorToolStripMenuItem.Text = "Registro Comprador";
+            this.compradorToolStripMenuItem.Name = "compradorToolStripMenuItem";
+            this.compradorToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.compradorToolStripMenuItem.Text = "Comprador";
             // 
             // frmMainSistema
             // 
@@ -119,6 +119,6 @@
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem propietariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem autosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registroCompradorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem compradorToolStripMenuItem;
     }
 }
