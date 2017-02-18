@@ -80,6 +80,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\Addventa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Addventa.Designer.cs">
+      <DependentUpon>Addventa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\clsGaleria.cs" />
     <Compile Include="Controllers\ClsManejadorUsers.cs" />
     <Compile Include="Controllers\clsManejoAutos.cs" />
@@ -159,6 +165,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Addventa.resx">
+      <DependentUpon>Addventa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\buscarPropietario.resx">
       <DependentUpon>buscarPropietario.cs</DependentUpon>
     </EmbeddedResource>
