@@ -23,14 +23,13 @@ namespace LoteAutosGit.Controllers
                 throw;
             }
         }
+
         public static void SaveComprador(comprador ine)
         {
             try
             {
                 var ctx = new DataModel();
-                //propietario datos = clsManejoPropietarios.returnPropietario(propietario);
-                //ctx.propietarios.Attach(datos);
-                //dauto.propietarios = datos;
+                
 
                 if (ine.idcomprador > 0) //Actualizar
                 {
@@ -45,6 +44,19 @@ namespace LoteAutosGit.Controllers
             catch (Exception exc)
             {
 
+                throw;
+            }
+        }
+
+        public static List<comprador> searchName(string Ine)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.compradores.Where(r => r.nombre.Contains(Ine)).ToList();
+            }
+            catch (Exception exc)
+            {
                 throw;
             }
         }
