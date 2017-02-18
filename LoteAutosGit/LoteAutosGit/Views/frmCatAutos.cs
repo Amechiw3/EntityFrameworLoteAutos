@@ -45,6 +45,7 @@ namespace LoteAutosGit.Views
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             var galeria = new frmGaleria(int.Parse(this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString()));
+            galeria.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
