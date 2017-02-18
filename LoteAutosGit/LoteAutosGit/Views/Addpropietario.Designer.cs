@@ -522,6 +522,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Addpropietario";
             this.Text = "propietario";
+            this.Load += new System.EventHandler(this.Addpropietario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbFoto)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
