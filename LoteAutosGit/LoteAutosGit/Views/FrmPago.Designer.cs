@@ -32,12 +32,21 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.idpropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idpropietario,
+            this.nombre,
+            this.telefono,
+            this.correo});
             this.dataGridView1.Location = new System.Drawing.Point(12, 50);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(563, 182);
@@ -68,6 +77,34 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
+            // idpropietario
+            // 
+            this.idpropietario.DataPropertyName = "idpropietario";
+            this.idpropietario.HeaderText = "id";
+            this.idpropietario.Name = "idpropietario";
+            this.idpropietario.ReadOnly = true;
+            // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "nombre";
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            // 
+            // telefono
+            // 
+            this.telefono.DataPropertyName = "telefono";
+            this.telefono.HeaderText = "Telefono";
+            this.telefono.Name = "telefono";
+            this.telefono.ReadOnly = true;
+            // 
+            // correo
+            // 
+            this.correo.DataPropertyName = "correo";
+            this.correo.HeaderText = "Correo";
+            this.correo.Name = "correo";
+            this.correo.ReadOnly = true;
+            // 
             // FrmPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -93,5 +130,9 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idpropietario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correo;
     }
 }
