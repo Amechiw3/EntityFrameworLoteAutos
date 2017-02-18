@@ -143,5 +143,18 @@ namespace LoteAutosGit.Controllers
                 throw;
             }
         }
+        public static List<propietario> Search(string dato)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.propietarios.Where(r => r.nombre.Contains(dato)).ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

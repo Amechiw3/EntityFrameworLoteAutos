@@ -20,5 +20,15 @@ namespace LoteAutosGit.Views
             InitializeComponent();
             this.dataGridView1.DataSource = clsManejoPropietarios.getallCBO();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            this.dataGridView1.DataSource = clsManejoPropietarios.Search(this.txtBuscar.Text);
+        }
     }
 }
