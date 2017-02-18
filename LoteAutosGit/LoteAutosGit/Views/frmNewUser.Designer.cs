@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_avenue = new System.Windows.Forms.TextBox();
+            this.txt_pais = new System.Windows.Forms.TextBox();
+            this.txt_col = new System.Windows.Forms.TextBox();
+            this.txt_calle = new System.Windows.Forms.TextBox();
+            this.txtx_ciudad = new System.Windows.Forms.TextBox();
+            this.txt_numC = new System.Windows.Forms.TextBox();
+            this.txt_apm = new System.Windows.Forms.TextBox();
+            this.txt_app = new System.Windows.Forms.TextBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,29 +48,29 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txt_Pass = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txt_nick = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_acept = new System.Windows.Forms.Button();
+            this.btn_cancel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_avenue);
+            this.groupBox1.Controls.Add(this.txt_pais);
+            this.groupBox1.Controls.Add(this.txt_col);
+            this.groupBox1.Controls.Add(this.txt_calle);
+            this.groupBox1.Controls.Add(this.txtx_ciudad);
+            this.groupBox1.Controls.Add(this.txt_numC);
+            this.groupBox1.Controls.Add(this.txt_apm);
+            this.groupBox1.Controls.Add(this.txt_app);
+            this.groupBox1.Controls.Add(this.txt_name);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
@@ -87,68 +87,68 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Personales:";
             // 
-            // textBox8
+            // txt_avenue
             // 
-            this.textBox8.Location = new System.Drawing.Point(321, 201);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(312, 26);
-            this.textBox8.TabIndex = 16;
+            this.txt_avenue.Location = new System.Drawing.Point(321, 201);
+            this.txt_avenue.Name = "txt_avenue";
+            this.txt_avenue.Size = new System.Drawing.Size(312, 26);
+            this.txt_avenue.TabIndex = 16;
             // 
-            // textBox7
+            // txt_pais
             // 
-            this.textBox7.Location = new System.Drawing.Point(499, 149);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(134, 26);
-            this.textBox7.TabIndex = 15;
+            this.txt_pais.Location = new System.Drawing.Point(499, 149);
+            this.txt_pais.Name = "txt_pais";
+            this.txt_pais.Size = new System.Drawing.Size(134, 26);
+            this.txt_pais.TabIndex = 15;
             // 
-            // textBox9
+            // txt_col
             // 
-            this.textBox9.Location = new System.Drawing.Point(6, 149);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(215, 26);
-            this.textBox9.TabIndex = 17;
+            this.txt_col.Location = new System.Drawing.Point(6, 149);
+            this.txt_col.Name = "txt_col";
+            this.txt_col.Size = new System.Drawing.Size(215, 26);
+            this.txt_col.TabIndex = 17;
             // 
-            // textBox4
+            // txt_calle
             // 
-            this.textBox4.Location = new System.Drawing.Point(6, 201);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(309, 26);
-            this.textBox4.TabIndex = 12;
+            this.txt_calle.Location = new System.Drawing.Point(6, 201);
+            this.txt_calle.Name = "txt_calle";
+            this.txt_calle.Size = new System.Drawing.Size(309, 26);
+            this.txt_calle.TabIndex = 12;
             // 
-            // textBox6
+            // txtx_ciudad
             // 
-            this.textBox6.Location = new System.Drawing.Point(374, 149);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(119, 26);
-            this.textBox6.TabIndex = 14;
+            this.txtx_ciudad.Location = new System.Drawing.Point(374, 149);
+            this.txtx_ciudad.Name = "txtx_ciudad";
+            this.txtx_ciudad.Size = new System.Drawing.Size(119, 26);
+            this.txtx_ciudad.TabIndex = 14;
             // 
-            // textBox5
+            // txt_numC
             // 
-            this.textBox5.Location = new System.Drawing.Point(227, 149);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(141, 26);
-            this.textBox5.TabIndex = 13;
+            this.txt_numC.Location = new System.Drawing.Point(227, 149);
+            this.txt_numC.Name = "txt_numC";
+            this.txt_numC.Size = new System.Drawing.Size(141, 26);
+            this.txt_numC.TabIndex = 13;
             // 
-            // textBox3
+            // txt_apm
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 97);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(309, 26);
-            this.textBox3.TabIndex = 11;
+            this.txt_apm.Location = new System.Drawing.Point(6, 97);
+            this.txt_apm.Name = "txt_apm";
+            this.txt_apm.Size = new System.Drawing.Size(309, 26);
+            this.txt_apm.TabIndex = 11;
             // 
-            // textBox2
+            // txt_app
             // 
-            this.textBox2.Location = new System.Drawing.Point(321, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(313, 26);
-            this.textBox2.TabIndex = 10;
+            this.txt_app.Location = new System.Drawing.Point(321, 45);
+            this.txt_app.Name = "txt_app";
+            this.txt_app.Size = new System.Drawing.Size(313, 26);
+            this.txt_app.TabIndex = 10;
             // 
-            // textBox1
+            // txt_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(309, 26);
-            this.textBox1.TabIndex = 9;
+            this.txt_name.Location = new System.Drawing.Point(6, 45);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(309, 26);
+            this.txt_name.TabIndex = 9;
             // 
             // label9
             // 
@@ -233,11 +233,11 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox12);
+            this.groupBox2.Controls.Add(this.txt_Pass);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox11);
+            this.groupBox2.Controls.Add(this.txt_email);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.textBox10);
+            this.groupBox2.Controls.Add(this.txt_nick);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Location = new System.Drawing.Point(12, 272);
             this.groupBox2.Name = "groupBox2";
@@ -246,12 +246,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de la cuenta:";
             // 
-            // textBox12
+            // txt_Pass
             // 
-            this.textBox12.Location = new System.Drawing.Point(6, 97);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(321, 26);
-            this.textBox12.TabIndex = 16;
+            this.txt_Pass.Location = new System.Drawing.Point(6, 97);
+            this.txt_Pass.Name = "txt_Pass";
+            this.txt_Pass.Size = new System.Drawing.Size(321, 26);
+            this.txt_Pass.TabIndex = 16;
             // 
             // label12
             // 
@@ -262,12 +262,12 @@
             this.label12.TabIndex = 15;
             this.label12.Text = "password";
             // 
-            // textBox11
+            // txt_email
             // 
-            this.textBox11.Location = new System.Drawing.Point(329, 45);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(301, 26);
-            this.textBox11.TabIndex = 14;
+            this.txt_email.Location = new System.Drawing.Point(329, 45);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(301, 26);
+            this.txt_email.TabIndex = 14;
             // 
             // label11
             // 
@@ -278,12 +278,12 @@
             this.label11.TabIndex = 13;
             this.label11.Text = "Email:";
             // 
-            // textBox10
+            // txt_nick
             // 
-            this.textBox10.Location = new System.Drawing.Point(6, 45);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(321, 26);
-            this.textBox10.TabIndex = 12;
+            this.txt_nick.Location = new System.Drawing.Point(6, 45);
+            this.txt_nick.Name = "txt_nick";
+            this.txt_nick.Size = new System.Drawing.Size(321, 26);
+            this.txt_nick.TabIndex = 12;
             // 
             // label10
             // 
@@ -294,23 +294,25 @@
             this.label10.TabIndex = 11;
             this.label10.Text = "nick Name";
             // 
-            // button1
+            // btn_acept
             // 
-            this.button1.Location = new System.Drawing.Point(238, 435);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(204, 36);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_acept.Location = new System.Drawing.Point(238, 435);
+            this.btn_acept.Name = "btn_acept";
+            this.btn_acept.Size = new System.Drawing.Size(204, 36);
+            this.btn_acept.TabIndex = 2;
+            this.btn_acept.Text = "Aceptar";
+            this.btn_acept.UseVisualStyleBackColor = true;
+            this.btn_acept.Click += new System.EventHandler(this.btn_acept_Click);
             // 
-            // button2
+            // btn_cancel
             // 
-            this.button2.Location = new System.Drawing.Point(448, 435);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(204, 36);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_cancel.Location = new System.Drawing.Point(448, 435);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(204, 36);
+            this.btn_cancel.TabIndex = 3;
+            this.btn_cancel.Text = "cancelar";
+            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // frmNewUser
             // 
@@ -318,8 +320,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(664, 483);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_cancel);
+            this.Controls.Add(this.btn_acept);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -340,13 +342,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_pais;
+        private System.Windows.Forms.TextBox txt_col;
+        private System.Windows.Forms.TextBox txtx_ciudad;
+        private System.Windows.Forms.TextBox txt_numC;
+        private System.Windows.Forms.TextBox txt_apm;
+        private System.Windows.Forms.TextBox txt_app;
+        private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -356,16 +358,16 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txt_calle;
+        private System.Windows.Forms.TextBox txt_avenue;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txt_Pass;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txt_nick;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_acept;
+        private System.Windows.Forms.Button btn_cancel;
     }
 }
