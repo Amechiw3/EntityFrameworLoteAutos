@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using LoteAutosGit.Controllers;
 
 namespace LoteAutosGit.Views
@@ -17,6 +16,19 @@ namespace LoteAutosGit.Views
         public frmLogin()
         {
             InitializeComponent();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            ClsManejoSession.SessionHelper objSession = ClsManejoSession.Login(txt_nickname.Text, txt_pass.Text);
+            if (!objSession.isValid)
+            {
+                MessageBox.Show("Error:" + objSession.msgError);
+            }
+            else
+            {
+                
+            }
         }
     }
 }

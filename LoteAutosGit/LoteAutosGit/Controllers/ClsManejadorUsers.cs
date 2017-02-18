@@ -27,7 +27,7 @@ namespace LoteAutosGit.Controllers
             }
         }
 
-        public void SaveUsers(usuario nUser)
+        public static void SaveUsers(usuario nUser)
         {
             try
             {

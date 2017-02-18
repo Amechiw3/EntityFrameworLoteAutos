@@ -78,21 +78,19 @@ namespace LoteAutosGit.Controllers
     public enum enumPermisosActivos
     {
         //Vendedor
-        Venta_Nueva = 1,
+        vendedor_Ventas = 2,
+        vendedor_Archivo = 1,
 
        //Gerente
 
-        ventita = 1,
-        propieta = 2,
-        aut = 3,
-        reg = 4,
+        
 
 
         //administrador
-        venta = 1,
-        propietarios = 2,
-        autos = 3,
-        registro = 4,
+        administrador_ventas = 2,
+        administrador_propietarios = 3,
+        administrador_autos = 4,
+        administrador_Comprador = 5,
 
     }
 }

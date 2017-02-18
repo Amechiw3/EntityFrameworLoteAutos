@@ -77,6 +77,7 @@
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(368, 26);
             this.txtValor.TabIndex = 11;
+            this.txtValor.TextChanged += new System.EventHandler(this.txtValor_TextChanged);
             // 
             // cmbFiltro
             // 
@@ -110,6 +111,7 @@
             this.btnAgregar.TabIndex = 8;
             this.btnAgregar.Text = "+";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // grdDatos
             // 
@@ -135,6 +137,7 @@
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.Size = new System.Drawing.Size(561, 265);
             this.grdDatos.TabIndex = 7;
+            this.grdDatos.DataSourceChanged += new System.EventHandler(this.grdDatos_DataSourceChanged);
             // 
             // idusuario
             // 
@@ -235,6 +238,7 @@
             this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "frmUsuarios";
             this.Text = "Registro de Usuarios";
+            this.Load += new System.EventHandler(this.frmUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
