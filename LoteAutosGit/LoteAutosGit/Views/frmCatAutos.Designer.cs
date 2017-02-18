@@ -39,6 +39,7 @@
             this.observacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblRegistros = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,11 +132,22 @@
             this.lblRegistros.TabIndex = 5;
             this.lblRegistros.Text = "Registros";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(132, 349);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 41);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Pagar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // frmCatAutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(766, 402);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.lblRegistros);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtBuscar);
@@ -165,5 +177,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nacionalidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn observacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn precio;
+        private System.Windows.Forms.Button button2;
     }
 }

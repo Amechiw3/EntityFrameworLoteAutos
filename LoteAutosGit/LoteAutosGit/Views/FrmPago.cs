@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using LoteAutosGit.Models;
+using LoteAutosGit.Controllers;
+
 namespace LoteAutosGit.Views
 {
     public partial class FrmPago : Form
@@ -15,6 +18,7 @@ namespace LoteAutosGit.Views
         public FrmPago()
         {
             InitializeComponent();
+            this.dataGridView1.DataSource = clsManejoPropietarios.getallCBO();
         }
     }
 }

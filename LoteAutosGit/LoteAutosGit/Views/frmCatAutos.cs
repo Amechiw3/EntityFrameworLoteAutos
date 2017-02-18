@@ -46,5 +46,10 @@ namespace LoteAutosGit.Views
         {
             var galeria = new frmGaleria(int.Parse(this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString()));
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.dataGridView1.SelectedRows[int.Parse(dataGridView1.SelectedRows.ToString())].Cells[0].Value.ToString());
+        }
     }
 }
