@@ -56,7 +56,7 @@ namespace LoteAutosGit.Controllers
             try
             {
                 var ctx = new DataModel();
-                propietario prop = getPropietario(idPropietario);
+                propietario prop = ctx.propietarios.Where(r => r.idpropietario == idPropietario).FirstOrDefault();
                 ctx.propietarios.Attach(prop);
                 datosauto.propietarios = prop;
                 ctx.Entry(datosauto).State = EntityState.Added;

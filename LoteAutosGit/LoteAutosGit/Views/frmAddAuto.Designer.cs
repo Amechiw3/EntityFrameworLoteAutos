@@ -57,22 +57,22 @@
             this.txtCalle = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.btnNvoProp = new System.Windows.Forms.Button();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtColor = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtModelo = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.cboPropierario = new System.Windows.Forms.ComboBox();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNacionalidad = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNoSerie = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbFoto)).BeginInit();
             this.SuspendLayout();
@@ -317,12 +317,12 @@
             this.btnNvoProp.UseVisualStyleBackColor = true;
             this.btnNvoProp.Click += new System.EventHandler(this.btnNvoProp_Click);
             // 
-            // textBox13
+            // txtColor
             // 
-            this.textBox13.Location = new System.Drawing.Point(331, 286);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(134, 26);
-            this.textBox13.TabIndex = 38;
+            this.txtColor.Location = new System.Drawing.Point(331, 286);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.Size = new System.Drawing.Size(134, 26);
+            this.txtColor.TabIndex = 38;
             // 
             // label14
             // 
@@ -333,12 +333,12 @@
             this.label14.TabIndex = 37;
             this.label14.Text = "Color";
             // 
-            // textBox14
+            // txtModelo
             // 
-            this.textBox14.Location = new System.Drawing.Point(331, 254);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(134, 26);
-            this.textBox14.TabIndex = 36;
+            this.txtModelo.Location = new System.Drawing.Point(331, 254);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(134, 26);
+            this.txtModelo.TabIndex = 36;
             // 
             // label15
             // 
@@ -349,12 +349,12 @@
             this.label15.TabIndex = 35;
             this.label15.Text = "Modelo";
             // 
-            // textBox15
+            // txtPrecio
             // 
-            this.textBox15.Location = new System.Drawing.Point(132, 286);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(111, 26);
-            this.textBox15.TabIndex = 34;
+            this.txtPrecio.Location = new System.Drawing.Point(132, 286);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(111, 26);
+            this.txtPrecio.TabIndex = 34;
             // 
             // label16
             // 
@@ -399,12 +399,12 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtNacionalidad
             // 
-            this.textBox1.Location = new System.Drawing.Point(611, 286);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 26);
-            this.textBox1.TabIndex = 43;
+            this.txtNacionalidad.Location = new System.Drawing.Point(611, 286);
+            this.txtNacionalidad.Name = "txtNacionalidad";
+            this.txtNacionalidad.Size = new System.Drawing.Size(151, 26);
+            this.txtNacionalidad.TabIndex = 43;
             // 
             // label18
             // 
@@ -415,12 +415,12 @@
             this.label18.TabIndex = 42;
             this.label18.Text = "Nacionalidad";
             // 
-            // textBox2
+            // txtNoSerie
             // 
-            this.textBox2.Location = new System.Drawing.Point(610, 254);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 26);
-            this.textBox2.TabIndex = 41;
+            this.txtNoSerie.Location = new System.Drawing.Point(610, 254);
+            this.txtNoSerie.Name = "txtNoSerie";
+            this.txtNoSerie.Size = new System.Drawing.Size(152, 26);
+            this.txtNoSerie.TabIndex = 41;
             // 
             // label19
             // 
@@ -441,13 +441,13 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // textBox3
+            // txtObservaciones
             // 
-            this.textBox3.Location = new System.Drawing.Point(132, 318);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(333, 72);
-            this.textBox3.TabIndex = 45;
+            this.txtObservaciones.Location = new System.Drawing.Point(132, 318);
+            this.txtObservaciones.Multiline = true;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(333, 72);
+            this.txtObservaciones.TabIndex = 45;
             // 
             // label20
             // 
@@ -464,18 +464,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 402);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtObservaciones);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNacionalidad);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNoSerie);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.txtColor);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.label17);
@@ -551,22 +551,22 @@
         private System.Windows.Forms.TextBox txtCalle;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnNvoProp;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtColor;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ComboBox cboPropierario;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNacionalidad;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNoSerie;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Label label20;
     }
 }
