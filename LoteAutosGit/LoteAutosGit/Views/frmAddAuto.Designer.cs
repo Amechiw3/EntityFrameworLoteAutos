@@ -95,6 +95,7 @@
             this.pcbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pcbFoto.TabIndex = 2;
             this.pcbFoto.TabStop = false;
+            this.pcbFoto.Click += new System.EventHandler(this.pcbFoto_Click);
             // 
             // btnTomarFoto
             // 
@@ -398,6 +399,7 @@
             this.btnCancelar.TabIndex = 39;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtNacionalidad
             // 
