@@ -8,21 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using LoteAutosGit.Tools;
 using LoteAutosGit.Controllers;
+using LoteAutosGit.Models;
 
-namespace LoteAutosGit.Views
+namespace LoteAutosGit
 {
-    public partial class catAuto : Form
+    public partial class Addventa : Form
     {
-        public catAuto()
+        public Addventa()
         {
             InitializeComponent();
-            this.dgvAutos.AutoGenerateColumns = false;
         }
 
-        private void catAuto_Load(object sender, EventArgs e)
+        private void Addventa_Load(object sender, EventArgs e)
         {
-            this.dgvAutos.DataSource = clsAuto.getall();
+
         }
     }
 }
