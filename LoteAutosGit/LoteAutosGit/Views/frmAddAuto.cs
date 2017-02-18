@@ -100,7 +100,15 @@ namespace LoteAutosGit.Views
             }
             else //Agregar nuevo propietario
             {
-
+                auto datos = new auto();
+                datos.marca = txtMarca.Text;
+                datos.modelo = txtModelo.Text;
+                datos.color = txtColor.Text;
+                datos.precio = double.Parse(txtPrecio.Text);
+                datos.nserie = txtNoSerie.Text;
+                datos.nacionalidad = txtNacionalidad.Text;
+                datos.Observacion = txtObservaciones.Text;
+                clsManejoAutos.savenewauto(datos, idpropietario);
             }
         }
     }
