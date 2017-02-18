@@ -96,7 +96,6 @@ namespace LoteAutosGit.Tools
             {
                 // Save Image
                 string filename = s.FileName;
-                MessageBox.Show(Path.GetFileName(s.FileName));
                 pcFoto.Image = Image.FromFile(filename);
 
 

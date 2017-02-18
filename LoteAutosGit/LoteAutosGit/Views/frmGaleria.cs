@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 using LoteAutosGit.Tools;
 using LoteAutosGit.Controllers;
+using LoteAutosGit.Models;
 
 namespace LoteAutosGit.Views
 {
     public partial class frmGaleria : Form
     {
         Webcam webcam;
-        public frmGaleria()
+        int idauto;
+        public frmGaleria(int id)
         {
             InitializeComponent();
-
+            idauto = id;
             webcam = new Webcam();
             webcam.InitializeWebCam(ref pcbFoto);
         }
@@ -27,6 +29,19 @@ namespace LoteAutosGit.Views
         private void btnTomar_Click(object sender, EventArgs e)
         {
             webcam.Start();
+        }
+
+        private void btnExaminar_Click(object sender, EventArgs e)
+        {
+            webcam.Stop();
+            Webcam.SaveImage(pcbFoto);
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            var datos = new galeria();
+            datos.fotografia = Webcam.SaveImageCapture(pcbFoto.Image);
+            clsGaleria.saveGaleria(datos, idauto);
         }
     }
 }
