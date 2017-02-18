@@ -76,16 +76,17 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WebCam_Capture">
-      <HintPath>..\..\..\..\..\Desktop\WebCam_Capture.dll</HintPath>
+      <HintPath>D:\WebCam_Capture.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\Addventa.cs">
+    <Compile Include="Addventa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Addventa.Designer.cs">
+    <Compile Include="Addventa.Designer.cs">
       <DependentUpon>Addventa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\clsComprador.cs" />
     <Compile Include="Controllers\clsGaleria.cs" />
     <Compile Include="Controllers\ClsManejadorUsers.cs" />
     <Compile Include="Controllers\clsManejoAutos.cs" />
@@ -101,6 +102,10 @@
     <Compile Include="Migrations\201702141429329_INICIAL.cs" />
     <Compile Include="Migrations\201702141429329_INICIAL.Designer.cs">
       <DependentUpon>201702141429329_INICIAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702180648183_add-IneComprador.cs" />
+    <Compile Include="Migrations\201702180648183_add-IneComprador.Designer.cs">
+      <DependentUpon>201702180648183_add-IneComprador.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\auto.cs" />
@@ -153,8 +158,14 @@
     <Compile Include="Views\frmUsuarios.Designer.cs">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Addventa.resx">
+      <DependentUpon>Addventa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702141429329_INICIAL.resx">
       <DependentUpon>201702141429329_INICIAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702180648183_add-IneComprador.resx">
+      <DependentUpon>201702180648183_add-IneComprador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -165,9 +176,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\Addventa.resx">
-      <DependentUpon>Addventa.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\buscarPropietario.resx">
       <DependentUpon>buscarPropietario.cs</DependentUpon>
     </EmbeddedResource>

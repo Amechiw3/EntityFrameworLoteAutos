@@ -129,5 +129,10 @@ namespace LoteAutosGit.Views
                 return false;
             }
         }
+
+        private void Addpropietario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
