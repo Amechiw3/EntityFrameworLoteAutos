@@ -129,5 +129,19 @@ namespace LoteAutosGit.Controllers
                 throw;
             }
         }
+
+        public static List<propietario> getallCBO()
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.propietarios.ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

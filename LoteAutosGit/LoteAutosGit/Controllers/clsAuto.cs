@@ -11,14 +11,28 @@ namespace LoteAutosGit.Controllers
 {
     class clsAuto
     {
-        public static List<auto> getall()
+        public static List<auto> getAll()
         {
             try
             {
                 var ctx = new DataModel();
                 return ctx.autos.ToList();
             }
-            catch (Exception)
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+        public static List<auto> getAllSearch(string dato)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.autos.Where(r => r.marca.Contains(dato) || r.modelo.Contains(dato)).ToList();
+            }
+            catch (Exception ex)
             {
 
                 throw;

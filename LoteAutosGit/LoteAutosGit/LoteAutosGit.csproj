@@ -80,6 +80,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\clsAuto.cs" />
     <Compile Include="Controllers\clsComprador.cs" />
     <Compile Include="Controllers\clsGaleria.cs" />
     <Compile Include="Controllers\ClsManejadorUsers.cs" />
@@ -121,6 +122,18 @@
     </Compile>
     <Compile Include="Views\buscarPropietario.Designer.cs">
       <DependentUpon>buscarPropietario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmAddAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmAddAuto.Designer.cs">
+      <DependentUpon>frmAddAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmCatAutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmCatAutos.Designer.cs">
+      <DependentUpon>frmCatAutos.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmLogin.cs">
       <SubType>Form</SubType>
@@ -169,6 +182,12 @@
     </Compile>
     <EmbeddedResource Include="Views\buscarPropietario.resx">
       <DependentUpon>buscarPropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmAddAuto.resx">
+      <DependentUpon>frmAddAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCatAutos.resx">
+      <DependentUpon>frmCatAutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

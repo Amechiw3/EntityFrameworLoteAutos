@@ -50,5 +50,37 @@ namespace LoteAutosGit.Controllers
                 throw;
             }
         }
+
+        public static void savenewauto(auto datosauto, int idPropietario)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                propietario prop = getPropietario(idPropietario);
+                ctx.propietarios.Attach(prop);
+                datosauto.propietarios = prop;
+                ctx.Entry(datosauto).State = EntityState.Added;
+                ctx.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+        private static propietario getPropietario(int id)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.propietarios.Where(r => r.idpropietario == id).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
     }
 }

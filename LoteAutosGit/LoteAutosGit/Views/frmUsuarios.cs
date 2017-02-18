@@ -38,7 +38,7 @@ namespace LoteAutosGit.Views
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            frmNewUser newuser = new frmNewUser();
+            frmNewUser newuser = new frmNewUser(this);
             newuser.Show();
         }
 
