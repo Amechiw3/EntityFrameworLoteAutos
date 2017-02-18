@@ -76,7 +76,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WebCam_Capture">
-      <HintPath>D:\WebCam_Capture.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\WebCam_Capture.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -117,6 +117,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\Webcam.cs" />
+    <Compile Include="Views\Addventa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Addventa.Designer.cs">
+      <DependentUpon>Addventa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\buscarPropietario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Addventa.resx">
+      <DependentUpon>Addventa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\buscarPropietario.resx">
       <DependentUpon>buscarPropietario.cs</DependentUpon>
     </EmbeddedResource>
