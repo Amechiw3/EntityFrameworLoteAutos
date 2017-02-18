@@ -63,7 +63,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.cboPropierario = new System.Windows.Forms.ComboBox();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -365,12 +365,12 @@
             this.label16.TabIndex = 33;
             this.label16.Text = "Precio";
             // 
-            // textBox16
+            // txtMarca
             // 
-            this.textBox16.Location = new System.Drawing.Point(132, 254);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(111, 26);
-            this.textBox16.TabIndex = 32;
+            this.txtMarca.Location = new System.Drawing.Point(132, 254);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(111, 26);
+            this.txtMarca.TabIndex = 32;
             // 
             // label17
             // 
@@ -477,7 +477,7 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.btnNvoProp);
             this.Controls.Add(this.txtPais);
@@ -557,7 +557,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ComboBox cboPropierario;
         private System.Windows.Forms.Button btnCancelar;

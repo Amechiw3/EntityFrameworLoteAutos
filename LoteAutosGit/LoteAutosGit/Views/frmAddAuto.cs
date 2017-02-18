@@ -87,7 +87,8 @@ namespace LoteAutosGit.Views
         {
             if (idpropietario > 0) //Agregar nuevo Auto
             {
-                   
+                auto datos = new auto();
+                datos.marca = txtMarca.Text;
             }
             else //Agregar nuevo propietario
             {
