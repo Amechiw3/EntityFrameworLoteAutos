@@ -10,7 +10,7 @@
   <Class Name="LoteAutosGit.Models.comprador">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAEAAAAACEAAAAACAgAAIIAAAAAAAAEAQAAAA=</HashCode>
+      <HashCode>AAACAAAAEAAAAACEAAAAACAgAAIIAAAAAAAAEAQAACA=</HashCode>
       <FileName>Models\comprador.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -21,7 +21,7 @@
       <FileName>Models\galeria.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoteAutosGit.Models.nivel" Collapsed="true">
+  <Class Name="LoteAutosGit.Models.nivel">
     <Position X="0.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAABAAAACAAAEBAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
