@@ -114,6 +114,7 @@ namespace LoteAutosGit.Views
                 prop.ciudad = txtCiudad.Text;
                 prop.pais = txtPais.Text;
                 prop.fotografia = Webcam.SaveImageCapture(pcbFoto.Image);
+                clsManejoPropietarios.SavePropietario(prop);
 
                 auto datos = new auto();
                 datos.marca = txtMarca.Text;
@@ -123,8 +124,18 @@ namespace LoteAutosGit.Views
                 datos.nserie = txtNoSerie.Text;
                 datos.nacionalidad = txtNacionalidad.Text;
                 datos.Observacion = txtObservaciones.Text;
-                clsManejoAutos.savenewauto(datos, idpropietario);
+                clsManejoAutos.savenewauto(datos, prop.idpropietario);
             }
+        }
+
+        private void pcbFoto_Click(object sender, EventArgs e)
+        {
+            webcam.Stop();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
