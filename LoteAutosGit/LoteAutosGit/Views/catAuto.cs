@@ -12,16 +12,17 @@ using LoteAutosGit.Controllers;
 
 namespace LoteAutosGit.Views
 {
-    public partial class frmLogin : Form
+    public partial class catAuto : Form
     {
-        public frmLogin()
+        public catAuto()
         {
             InitializeComponent();
+            this.dgvAutos.AutoGenerateColumns = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void catAuto_Load(object sender, EventArgs e)
         {
-
+            this.dgvAutos.DataSource = clsAuto.getall();
         }
     }
 }
