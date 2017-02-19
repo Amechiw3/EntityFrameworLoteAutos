@@ -65,30 +65,35 @@
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // ventasToolStripMenuItem
             // 
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
             this.ventasToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ventasToolStripMenuItem.Text = "Ventas";
+            this.ventasToolStripMenuItem.Click += new System.EventHandler(this.ventasToolStripMenuItem_Click);
             // 
             // propietariosToolStripMenuItem
             // 
             this.propietariosToolStripMenuItem.Name = "propietariosToolStripMenuItem";
             this.propietariosToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.propietariosToolStripMenuItem.Text = "Propietarios";
+            this.propietariosToolStripMenuItem.Click += new System.EventHandler(this.propietariosToolStripMenuItem_Click);
             // 
             // autosToolStripMenuItem
             // 
             this.autosToolStripMenuItem.Name = "autosToolStripMenuItem";
             this.autosToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.autosToolStripMenuItem.Text = "Autos";
+            this.autosToolStripMenuItem.Click += new System.EventHandler(this.autosToolStripMenuItem_Click);
             // 
             // compradorToolStripMenuItem
             // 
             this.compradorToolStripMenuItem.Name = "compradorToolStripMenuItem";
             this.compradorToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.compradorToolStripMenuItem.Text = "Comprador";
+            this.compradorToolStripMenuItem.Click += new System.EventHandler(this.compradorToolStripMenuItem_Click);
             // 
             // frmMainSistema
             // 

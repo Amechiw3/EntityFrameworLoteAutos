@@ -19,5 +19,34 @@ namespace LoteAutosGit.Views
         {
             InitializeComponent();
         }
+
+        private void compradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var comprador = new FrmComprador();
+            comprador.ShowDialog();
+        }
+
+        private void autosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var catalogo = new frmCatAutos();
+            catalogo.ShowDialog();
+        }
+
+        private void propietariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var propietario = new frmAddAuto();
+            propietario.ShowDialog();
+        }
+
+        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var venta = new AddVenta();
+            venta.ShowDialog();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
