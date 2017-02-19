@@ -39,13 +39,64 @@ namespace LoteAutosGit.Controllers
             }
         }
 
-        public static List<auto> getAllPago(int idauto)
+        public static List<pago> getAllPago(int idauto)
         {
             try
             {
                 var ctx = new DataModel();
                 return
-                ctx.autos.Where(r => r.propietarios.idpropietario == idauto).ToList();
+                ctx.pagos
+                .Include("autos")
+                .Include("autos.propietarios")
+                .Where(r => r.autos.propietarios.idpropietario == idauto).ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static List<auto> getAllPagoA(int idauto)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return
+                ctx.autos
+                .Include("propietarios")
+                .Where(r => r.propietarios.idpropietario == idauto).ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static List<auto> SearchPagoA(int idauto, string auto)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return
+                ctx.autos
+                .Include("propietarios")
+                .Where(r => r.propietarios.idpropietario == idauto && r.marca.Contains(auto) || r.modelo.Contains(auto)).ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static pago searchPago(int idcarro)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.pagos.Where(r => r.autos.idauto == idcarro).FirstOrDefault();
             }
             catch (Exception)
             {
