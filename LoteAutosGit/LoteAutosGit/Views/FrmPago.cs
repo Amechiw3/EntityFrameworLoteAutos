@@ -33,7 +33,8 @@ namespace LoteAutosGit.Views
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            var pagoauto = new frmPagoAuto(int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString()));
+            pagoauto.ShowDialog();
         }
     }
 }

@@ -38,5 +38,20 @@ namespace LoteAutosGit.Controllers
                 throw;
             }
         }
+
+        public static List<auto> getAllPago(int idauto)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return
+                ctx.autos.Where(r => r.propietarios.idpropietario == idauto).ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

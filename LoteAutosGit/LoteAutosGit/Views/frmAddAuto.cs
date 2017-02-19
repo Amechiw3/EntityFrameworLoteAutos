@@ -126,6 +126,7 @@ namespace LoteAutosGit.Views
                 datos.Observacion = txtObservaciones.Text;
                 clsManejoAutos.savenewauto(datos, prop.idpropietario);
             }
+            this.Close();
         }
 
         private void pcbFoto_Click(object sender, EventArgs e)

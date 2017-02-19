@@ -51,10 +51,8 @@ namespace LoteAutosGit.Views
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (this.dataGridView1.SelectedRows.Count == 1)
-            {
-
-            }
+            var ven = new FrmPago();
+            ven.ShowDialog();
         }
     }
 }
