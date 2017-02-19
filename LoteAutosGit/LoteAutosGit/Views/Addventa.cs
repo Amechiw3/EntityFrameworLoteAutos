@@ -13,7 +13,6 @@ namespace LoteAutosGit.Views
     public partial class AddVenta : Form
     {
 
-
         public AddVenta()
         {
             InitializeComponent();

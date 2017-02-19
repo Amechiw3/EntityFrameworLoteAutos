@@ -19,6 +19,7 @@ namespace LoteAutosGit.Views
             InitializeComponent();
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.DataSource = clsAuto.getAll();
+            this.dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void frmCatAutos_Load(object sender, EventArgs e)
@@ -50,7 +51,10 @@ namespace LoteAutosGit.Views
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(this.dataGridView1.SelectedRows[int.Parse(dataGridView1.SelectedRows.ToString())].Cells[0].Value.ToString());
+            if (this.dataGridView1.SelectedRows.Count == 1)
+            {
+
+            }
         }
     }
 }

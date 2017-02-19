@@ -40,6 +40,48 @@ namespace LoteAutosGit.Controllers
             {
             }
         }
+
+        public List<auto> getallAuto()
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.autos.ToList();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+        public List<usuario> getallUsuario()
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.usuarios.ToList();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+        public List<comprador> getallComprador()
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.compradores.ToList();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
     }
 }
 

@@ -30,5 +30,10 @@ namespace LoteAutosGit.Views
         {
             this.dataGridView1.DataSource = clsManejoPropietarios.Search(this.txtBuscar.Text);
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

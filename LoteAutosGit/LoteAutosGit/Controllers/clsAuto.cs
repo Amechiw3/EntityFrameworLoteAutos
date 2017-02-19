@@ -30,7 +30,7 @@ namespace LoteAutosGit.Controllers
             try
             {
                 var ctx = new DataModel();
-                return ctx.autos.Where(r => r.marca.Contains(dato) || r.modelo.Contains(dato)).ToList();
+                return ctx.autos.Include("propietarios").Where(r => r.marca.Contains(dato) || r.modelo.Contains(dato)).ToList();
             }
             catch (Exception ex)
             {
