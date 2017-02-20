@@ -44,5 +44,10 @@ namespace LoteAutosGit.Views
             datos.fotografia = Webcam.SaveImageCapture(pcbFoto.Image);
             clsGaleria.saveGaleria(datos, idauto);
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

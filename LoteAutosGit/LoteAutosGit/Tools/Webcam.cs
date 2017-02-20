@@ -18,6 +18,11 @@ namespace LoteAutosGit.Tools
         private PictureBox _FrameImage;
         private int FrameNumber = 30;
 
+        public Webcam()
+        {
+            Directory.CreateDirectory(Directory.GetCurrentDirectory() + @"\Propietario");
+        }
+
         public void InitializeWebCam(ref PictureBox ImageControl)
         {
             webcam = new WebCamCapture();

@@ -48,5 +48,18 @@ namespace LoteAutosGit.Views
         {
             this.Close();
         }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "N/A";
+            }
+        }
     }
 }
