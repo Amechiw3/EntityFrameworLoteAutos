@@ -60,5 +60,38 @@ namespace LoteAutosGit.Controllers
                 throw;
             }
         }
+
+        public static List<comprador> GetAllComprador()
+        {
+            try
+            {
+
+                var ctx = new DataModel();
+                return (from r in ctx.compradores.ToList()
+                        select new comprador
+                        {
+                            idcomprador = r.idcomprador,
+                            nombre = $"{r.nombre} {r.appaterno} {r.apmaterno}"
+                        }).ToList();
+
+            }
+            catch (Exception exc)
+            {
+                throw;
+            }
+        }
+
+        public static comprador searchComprador(int idcomprador)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.compradores.Where(r => r.idcomprador == idcomprador).FirstOrDefault();
+            }
+            catch (Exception exc)
+            {
+                throw;
+            }
+        }
     }
 }

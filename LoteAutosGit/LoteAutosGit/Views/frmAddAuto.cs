@@ -96,7 +96,6 @@ namespace LoteAutosGit.Views
                 datos.nacionalidad = txtNacionalidad.Text;
                 datos.Observacion = txtObservaciones.Text;
                 clsManejoAutos.savenewauto(datos, idpropietario);
-
             }
             else //Agregar nuevo propietario
             {
