@@ -113,6 +113,7 @@ namespace LoteAutosGit.Views
                 prop.colonia = txtColonia.Text;
                 prop.ciudad = txtCiudad.Text;
                 prop.pais = txtPais.Text;
+                webcam.Stop();
                 prop.fotografia = Webcam.SaveImageCapture(pcbFoto.Image);
                 clsManejoPropietarios.SavePropietario(prop);
 

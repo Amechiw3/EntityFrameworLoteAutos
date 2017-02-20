@@ -33,6 +33,7 @@ namespace LoteAutosGit.Views
             comprador.ciudad = txtCiudad.Text;
             comprador.pais = txtPais.Text;
             clsComprador.SaveComprador(comprador);
+            this.Close();
 
         }
 
