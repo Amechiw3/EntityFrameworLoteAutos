@@ -18,6 +18,7 @@ namespace LoteAutosGit.Views
         public frmMainSistema()
         {
             InitializeComponent();
+            SessionActiva = new ClsManejoSession.SessionHelper();
         }
 
         private void compradorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,16 +50,16 @@ namespace LoteAutosGit.Views
             this.Close();
         }
 
-        private void textBox1_Enter(object sender, EventArgs e)
+        private void frmMainSistema_Load(object sender, EventArgs e)
         {
-            textBox1.Clear();
-        }
-
-        private void textBox1_Leave(object sender, EventArgs e)
-        {
-            if (textBox1.Text == "")
+            if (!frmMainSistema.SessionActiva.isValid)
             {
-                textBox1.Text = "N/A";
+                frmLogin login = new frmLogin();
+                login.ShowDialog();
+                if (!frmMainSistema.SessionActiva.isValid)
+                {
+                    this.Close();
+                }
             }
         }
     }

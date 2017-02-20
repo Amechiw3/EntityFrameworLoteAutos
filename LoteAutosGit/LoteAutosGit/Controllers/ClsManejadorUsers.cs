@@ -74,6 +74,34 @@ namespace LoteAutosGit.Controllers
             }
         }
 
+        public static List<usuario> getallCBO()
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.usuarios.ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static usuario returnUsuario(int id)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.usuarios.Where(r => r.idusuario == id).FirstOrDefault();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public enum FILTRAR
         {
             APELLIDO=0,

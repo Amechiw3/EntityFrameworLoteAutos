@@ -196,6 +196,18 @@
     <Compile Include="Views\frmUsuarios.Designer.cs">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmVentaAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmVentaAuto.Designer.cs">
+      <DependentUpon>frmVentaAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmVentaComprador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmVentaComprador.Designer.cs">
+      <DependentUpon>frmVentaComprador.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Migrations\201702141429329_INICIAL.resx">
       <DependentUpon>201702141429329_INICIAL.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +261,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmVentaAuto.resx">
+      <DependentUpon>frmVentaAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmVentaComprador.resx">
+      <DependentUpon>frmVentaComprador.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Models\DiagramModel.cd" />
     <None Include="packages.config" />

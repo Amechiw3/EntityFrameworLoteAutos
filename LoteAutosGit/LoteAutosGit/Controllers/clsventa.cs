@@ -15,7 +15,7 @@ namespace LoteAutosGit.Controllers
 {
     class clsventa
     {
-        public void Venta(int idAuto, int usuario, int comprador, venta Venta)
+        public static void Venta(int idAuto, int usuario, int comprador, venta Venta)
         {
             try
             {
