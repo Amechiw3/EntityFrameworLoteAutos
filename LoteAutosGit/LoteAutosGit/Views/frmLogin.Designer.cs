@@ -57,6 +57,7 @@
             // 
             this.txt_pass.Location = new System.Drawing.Point(16, 84);
             this.txt_pass.Name = "txt_pass";
+            this.txt_pass.PasswordChar = '☺';
             this.txt_pass.Size = new System.Drawing.Size(398, 26);
             this.txt_pass.TabIndex = 3;
             // 
@@ -110,6 +111,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso";
             this.ResumeLayout(false);
             this.PerformLayout();

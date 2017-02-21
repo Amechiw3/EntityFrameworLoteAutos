@@ -22,24 +22,7 @@ namespace LoteAutosGit.Views
             InitializeComponent();
             webcam = new Webcam();
             webcam.InitializeWebCam(ref pcbFoto);
-        }
-
-        private void btnFoto_Click(object sender, EventArgs e)
-        {
-            webcam.Start();
-        }
-
-        private void btnExaminar_Click(object sender, EventArgs e)
-        {
-            webcam.Stop();
-            Webcam.SaveImage(pcbFoto);
-        }
-        
-        private void btnTomar_Click(object sender, EventArgs e)
-        {
-            webcam.Stop();
-            //MessageBox.Show(Webcam.SaveImageCapture(pcbFoto.Image));
-        }
+        }        
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -49,13 +32,13 @@ namespace LoteAutosGit.Views
                 {
                     var datos = new propietario();
                     datos.nombre = txtNombre.Text;
-                    datos.appaterno = txtAppaterno.Text;
-                    datos.apmaterno = txtApmaterno.Text;
+                    datos.appaterno = txtApPaterno.Text;
+                    datos.apmaterno = txtApMateno.Text;
                     datos.ine = txtINE.Text;
                     datos.telefono = txtTelefono.Text;
                     datos.correo = txtCorreo.Text;
                     datos.calle = txtCalle.Text;
-                    datos.ncasa = txtNcasa.Text;
+                    datos.ncasa = txtNoCasa.Text;
                     datos.avenida = txtAvenida.Text;
                     datos.colonia = txtColonia.Text;
                     datos.ciudad = txtCiudad.Text;
@@ -69,7 +52,7 @@ namespace LoteAutosGit.Views
                     var auto = new auto();
                     auto.marca = txtMarca.Text;
                     auto.modelo = txtModelo.Text;
-                    auto.nserie = txtNserie.Text;
+                    auto.nserie = txtNoSerie.Text;
                     auto.precio = double.Parse(txtPrecio.Text);
                     auto.color = txtColor.Text;
                     auto.nacionalidad = txtNacionalidad.Text;
@@ -80,7 +63,7 @@ namespace LoteAutosGit.Views
                 else
                 {
                     errorINE.Clear();
-                    errorINE.SetError(txtNserie, "Numero de serie duplicado");
+                    errorINE.SetError(txtNoSerie, "Numero de serie duplicado");
                 }
             }
             else
@@ -92,9 +75,9 @@ namespace LoteAutosGit.Views
 
         public bool validarAuto()
         {
-            if (txtNserie.Text != "")
+            if (txtNoSerie.Text != "")
             {
-                LoteAutosGit.Models.auto datos = clsManejoAutos.searchNSerie(txtNserie.Text);
+                LoteAutosGit.Models.auto datos = clsManejoAutos.searchNSerie(txtNoSerie.Text);
                 if (datos == null)
                 {
                     return (txtMarca.Text != "" && txtModelo.Text != "" && txtPrecio.Text != "" && txtColor.Text != "" && txtNacionalidad.Text != "");
@@ -117,7 +100,7 @@ namespace LoteAutosGit.Views
                 propietario datos = clsManejoPropietarios.searchINE(txtINE.Text);
                 if (datos == null)
                 {
-                    return (txtNombre.Text != "" && txtAppaterno.Text != "" && txtApmaterno.Text != "" && txtCorreo.Text != "" && txtTelefono.Text != "" && txtCalle.Text != "" && txtNcasa.Text != "" && txtAvenida.Text != "" && txtColonia.Text != "" && txtCiudad.Text != "" && txtPais.Text != "");
+                    return (txtNombre.Text != "" && txtApPaterno.Text != "" && txtApMateno.Text != "" && txtCorreo.Text != "" && txtTelefono.Text != "" && txtCalle.Text != "" && txtNoCasa.Text != "" && txtAvenida.Text != "" && txtColonia.Text != "" && txtCiudad.Text != "" && txtPais.Text != "");
                 }
                 else
                 {
@@ -133,6 +116,18 @@ namespace LoteAutosGit.Views
         private void Addpropietario_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnTomarFoto_Click(object sender, EventArgs e)
+        {
+            if (!webcam.camara)
+            {
+                webcam.Start();
+            }
+            else
+            {
+                webcam.Stop();
+            }
         }
     }
 }

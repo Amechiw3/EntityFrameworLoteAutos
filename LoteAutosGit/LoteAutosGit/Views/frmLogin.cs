@@ -27,7 +27,8 @@ namespace LoteAutosGit.Views
             }
             else
             {
-                
+                frmMainSistema.SessionActiva = objSession;
+                this.Close();
             }
         }
     }

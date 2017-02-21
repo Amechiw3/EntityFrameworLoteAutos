@@ -16,7 +16,7 @@ namespace LoteAutosGit.Controllers
             try
             {
                 var ctx = new DataModel();
-                return ctx.autos.Include("galerias").Include("pagos").Include("ventas").ToList();
+                return ctx.autos.ToList();
             }
             catch (Exception ex)
             {

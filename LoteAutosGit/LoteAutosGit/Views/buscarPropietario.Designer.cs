@@ -32,8 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnNuevoPropietario = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblRegistro = new System.Windows.Forms.Label();
             this.idpropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fotografia = new System.Windows.Forms.DataGridViewImageColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +57,7 @@
             this.dgvDatosPropietario.Name = "dgvDatosPropietario";
             this.dgvDatosPropietario.Size = new System.Drawing.Size(730, 310);
             this.dgvDatosPropietario.TabIndex = 0;
+            this.dgvDatosPropietario.DataSourceChanged += new System.EventHandler(this.dgvDatosPropietario_DataSourceChanged);
             // 
             // label1
             // 
@@ -89,25 +89,15 @@
             this.btnNuevoPropietario.UseVisualStyleBackColor = true;
             this.btnNuevoPropietario.Click += new System.EventHandler(this.btnNuevoPropietario_Click);
             // 
-            // label2
+            // lblRegistro
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 357);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Registros:";
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.Location = new System.Drawing.Point(162, 407);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 34);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.lblRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblRegistro.AutoSize = true;
+            this.lblRegistro.Location = new System.Drawing.Point(12, 357);
+            this.lblRegistro.Name = "lblRegistro";
+            this.lblRegistro.Size = new System.Drawing.Size(81, 20);
+            this.lblRegistro.TabIndex = 4;
+            this.lblRegistro.Text = "Registros:";
             // 
             // idpropietario
             // 
@@ -115,7 +105,6 @@
             this.idpropietario.HeaderText = "ID";
             this.idpropietario.Name = "idpropietario";
             this.idpropietario.ReadOnly = true;
-            this.idpropietario.Visible = false;
             // 
             // fotografia
             // 
@@ -157,8 +146,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(754, 453);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblRegistro);
             this.Controls.Add(this.btnNuevoPropietario);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
@@ -180,8 +168,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnNuevoPropietario;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblRegistro;
         private System.Windows.Forms.DataGridViewTextBoxColumn idpropietario;
         private System.Windows.Forms.DataGridViewImageColumn fotografia;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;

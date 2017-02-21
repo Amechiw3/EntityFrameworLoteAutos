@@ -35,7 +35,7 @@ namespace LoteAutosGit.Views
 
         private void propietariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var propietario = new frmAddAuto();
+            var propietario = new buscarPropietario();
             propietario.ShowDialog();
         }
 

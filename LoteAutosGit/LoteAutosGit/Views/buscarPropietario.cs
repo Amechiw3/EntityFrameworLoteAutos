@@ -23,21 +23,29 @@ namespace LoteAutosGit.Views
 
         private void buscarPropietario_Load(object sender, EventArgs e)
         {
-            clsManejoPropietarios.getall(dgvDatosPropietario);
+            cargarPropietarios();
+        }
+
+        public void cargarPropietarios()
+        {
+            this.dgvDatosPropietario.DataSource = clsManejoPropietarios.getallimage(txtNombre.Text);
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
-            this.dgvDatosPropietario.Rows.Clear();
-            dgvDatosPropietario.AllowUserToAddRows = true;
+            this.dgvDatosPropietario.DataSource = clsManejoPropietarios.getallimage(txtNombre.Text);
 
-            clsManejoPropietarios.searchPRopietario(dgvDatosPropietario, txtNombre.Text);
         }
 
         private void btnNuevoPropietario_Click(object sender, EventArgs e)
         {
             var nuevopropietario = new Addpropietario();
             nuevopropietario.ShowDialog();
+        }
+
+        private void dgvDatosPropietario_DataSourceChanged(object sender, EventArgs e)
+        {
+            this.lblRegistro.Text = $"Registros: {this.dgvDatosPropietario.RowCount}";
         }
     }
 }

@@ -143,12 +143,42 @@ namespace LoteAutosGit.Controllers
                 throw;
             }
         }
+
         public static List<propietario> Search(string dato)
         {
             try
             {
                 var ctx = new DataModel();
                 return ctx.propietarios.Where(r => r.nombre.Contains(dato)).ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public int idpropietario { get; set; }
+        public Image fotografia { get; set; }
+        public string nombre { get; set; }
+        public string telefono { get; set; }
+        public string correo { get; set; }
+
+        public static List<clsManejoPropietarios> getallimage(string text)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                //return ctx.propietarios.ToList();
+                return (from r in ctx.propietarios.Where(p => p.nombre.Contains(text) || p.appaterno.Contains(text) || p.apmaterno.Contains(text)).ToList()
+                        select new clsManejoPropietarios
+                        {
+                            idpropietario = r.idpropietario,
+                            fotografia = Image.FromFile(Directory.GetCurrentDirectory() + @"\Propietario\" + r.fotografia),
+                            nombre = $"{r.nombre} {r.appaterno} {r.apmaterno}",
+                            telefono = r.telefono,
+                            correo = r.correo
+                        }).ToList();
             }
             catch (Exception)
             {

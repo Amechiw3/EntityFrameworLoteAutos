@@ -17,6 +17,7 @@ namespace LoteAutosGit.Tools
         private WebCamCapture webcam;
         private PictureBox _FrameImage;
         private int FrameNumber = 30;
+        public bool camara = false;
 
         public Webcam()
         {
@@ -41,11 +42,13 @@ namespace LoteAutosGit.Tools
         {
             webcam.TimeToCapture_milliseconds = FrameNumber;
             webcam.Start(0);
+            camara = true;
         }
 
         public void Stop()
         {
             webcam.Stop();
+            camara = false;
         }
 
         public void Continue()
@@ -71,14 +74,13 @@ namespace LoteAutosGit.Tools
         {
             var s = new SaveFileDialog();
             var rnd = new Random();
-            s.FileName = "Image";// Default file name
-            s.InitialDirectory = Directory.GetCurrentDirectory() + @"\Propietario";
-            s.FileName = rnd.Next(0, 100000).ToString();
-            s.DefaultExt = ".png";// Default file extension
-            s.Filter = "Imagenes JPG|*.jpg|Imagenes PNG|*.png"; // Filter files by extension
+            s.FileName = "Image";// Nombre del archivo inicial
+            s.InitialDirectory = Directory.GetCurrentDirectory() + @"\Propietario"; // Carpeta inicial
+            s.FileName = rnd.Next(0, 100000).ToString(); // Generas un nombre random
+            s.DefaultExt = ".png";// Extencion por defecto
+            s.Filter = "Imagenes JPG|*.jpg|Imagenes PNG|*.png"; // Filtro de archivos
             // Save Image
             string filename = s.FileName;
-            //MessageBox.Show( Path.GetFileName(s.FileName) );
             string archivo = Directory.GetCurrentDirectory() + @"\Propietario\"+ filename+".png";
             FileStream fstream = new FileStream(archivo, FileMode.Create);
             image.Save(fstream, ImageFormat.Jpeg);

@@ -108,6 +108,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "frmMainSistema";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema";
             this.Load += new System.EventHandler(this.frmMainSistema_Load);
             this.menuStrip1.ResumeLayout(false);
