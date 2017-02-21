@@ -16,7 +16,7 @@ namespace LoteAutosGit.Tools
     {
         private WebCamCapture webcam;
         private PictureBox _FrameImage;
-        private int FrameNumber = 30;
+        private int FrameNumber = 60;
         public bool camara = false;
 
         public Webcam()

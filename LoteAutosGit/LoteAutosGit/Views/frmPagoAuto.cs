@@ -21,15 +21,6 @@ namespace LoteAutosGit.Views
             InitializeComponent();
             idpropietario = idProp;
             this.dataGridView1.AutoGenerateColumns = false;
-            /*
-            List<auto> list = new List<auto>();
-            foreach (var item in clsAuto.getAllPago(idpropietario))
-            {
-                list.Add(item.autos);
-            }
-            this.dataGridView1.DataSource = list;
-            */
-
             this.dataGridView1.DataSource = clsAuto.getAllPagoA(idpropietario);
 
 
@@ -44,7 +35,7 @@ namespace LoteAutosGit.Views
             }
             else
             {
-                clsPago.savePago(int.Parse(this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString()), idpropietario);
+                clsPago.savePago(int.Parse(this.dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString()));
                 this.Close();
             }
         }

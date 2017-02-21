@@ -22,6 +22,7 @@ namespace LoteAutosGit.Views
             InitializeComponent();
             webcam = new Webcam();
             webcam.InitializeWebCam(ref pcbFoto);
+            cboNacionalidad.SelectedIndex = 1;
         }        
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -55,7 +56,7 @@ namespace LoteAutosGit.Views
                     auto.nserie = txtNoSerie.Text;
                     auto.precio = double.Parse(txtPrecio.Text);
                     auto.color = txtColor.Text;
-                    auto.nacionalidad = txtNacionalidad.Text;
+                    auto.nacionalidad = cboNacionalidad.Text;
                     auto.Observacion = txtObservaciones.Text;
                     auto.propietarios = datos;
                     clsManejoAutos.SaveAuto(auto);
@@ -80,7 +81,7 @@ namespace LoteAutosGit.Views
                 LoteAutosGit.Models.auto datos = clsManejoAutos.searchNSerie(txtNoSerie.Text);
                 if (datos == null)
                 {
-                    return (txtMarca.Text != "" && txtModelo.Text != "" && txtPrecio.Text != "" && txtColor.Text != "" && txtNacionalidad.Text != "");
+                    return (txtMarca.Text != "" && txtModelo.Text != "" && txtPrecio.Text != "" && txtColor.Text != "");
                 }
                 else
                 {

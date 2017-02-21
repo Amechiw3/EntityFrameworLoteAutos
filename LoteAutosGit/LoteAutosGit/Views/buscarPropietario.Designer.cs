@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.dgvDatosPropietario = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.btnNuevoPropietario = new System.Windows.Forms.Button();
-            this.lblRegistro = new System.Windows.Forms.Label();
             this.idpropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fotografia = new System.Windows.Forms.DataGridViewImageColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.btnNuevoPropietario = new System.Windows.Forms.Button();
+            this.lblRegistro = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosPropietario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,50 +54,13 @@
             this.telefono,
             this.correo});
             this.dgvDatosPropietario.Location = new System.Drawing.Point(12, 44);
+            this.dgvDatosPropietario.MultiSelect = false;
             this.dgvDatosPropietario.Name = "dgvDatosPropietario";
+            this.dgvDatosPropietario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDatosPropietario.Size = new System.Drawing.Size(730, 310);
             this.dgvDatosPropietario.TabIndex = 0;
             this.dgvDatosPropietario.DataSourceChanged += new System.EventHandler(this.dgvDatosPropietario_DataSourceChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Buscar";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(77, 12);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(299, 26);
-            this.txtNombre.TabIndex = 2;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
-            // 
-            // btnNuevoPropietario
-            // 
-            this.btnNuevoPropietario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnNuevoPropietario.Location = new System.Drawing.Point(12, 407);
-            this.btnNuevoPropietario.Name = "btnNuevoPropietario";
-            this.btnNuevoPropietario.Size = new System.Drawing.Size(144, 34);
-            this.btnNuevoPropietario.TabIndex = 3;
-            this.btnNuevoPropietario.Text = "Nuevo Propietario";
-            this.btnNuevoPropietario.UseVisualStyleBackColor = true;
-            this.btnNuevoPropietario.Click += new System.EventHandler(this.btnNuevoPropietario_Click);
-            // 
-            // lblRegistro
-            // 
-            this.lblRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblRegistro.AutoSize = true;
-            this.lblRegistro.Location = new System.Drawing.Point(12, 357);
-            this.lblRegistro.Name = "lblRegistro";
-            this.lblRegistro.Size = new System.Drawing.Size(81, 20);
-            this.lblRegistro.TabIndex = 4;
-            this.lblRegistro.Text = "Registros:";
+            this.dgvDatosPropietario.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatosPropietario_CellDoubleClick);
             // 
             // idpropietario
             // 
@@ -140,6 +103,46 @@
             this.correo.Name = "correo";
             this.correo.ReadOnly = true;
             this.correo.Width = 230;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Buscar";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNombre.Location = new System.Drawing.Point(77, 12);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(299, 26);
+            this.txtNombre.TabIndex = 2;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            // 
+            // btnNuevoPropietario
+            // 
+            this.btnNuevoPropietario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnNuevoPropietario.Location = new System.Drawing.Point(12, 407);
+            this.btnNuevoPropietario.Name = "btnNuevoPropietario";
+            this.btnNuevoPropietario.Size = new System.Drawing.Size(144, 34);
+            this.btnNuevoPropietario.TabIndex = 3;
+            this.btnNuevoPropietario.Text = "Nuevo Propietario";
+            this.btnNuevoPropietario.UseVisualStyleBackColor = true;
+            this.btnNuevoPropietario.Click += new System.EventHandler(this.btnNuevoPropietario_Click);
+            // 
+            // lblRegistro
+            // 
+            this.lblRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblRegistro.AutoSize = true;
+            this.lblRegistro.Location = new System.Drawing.Point(12, 357);
+            this.lblRegistro.Name = "lblRegistro";
+            this.lblRegistro.Size = new System.Drawing.Size(81, 20);
+            this.lblRegistro.TabIndex = 4;
+            this.lblRegistro.Text = "Registros:";
             // 
             // buscarPropietario
             // 

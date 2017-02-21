@@ -30,14 +30,14 @@
         {
             this.lblRegistros = new System.Windows.Forms.Label();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.idauto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nacionalidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.observacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +69,22 @@
             this.dgvDatos.Size = new System.Drawing.Size(677, 306);
             this.dgvDatos.TabIndex = 8;
             this.dgvDatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellDoubleClick);
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(12, 32);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(267, 26);
+            this.txtBuscar.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Buscar";
             // 
             // idauto
             // 
@@ -106,22 +122,6 @@
             this.precio.HeaderText = "Precio";
             this.precio.Name = "precio";
             // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Location = new System.Drawing.Point(12, 32);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(267, 26);
-            this.txtBuscar.TabIndex = 7;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Buscar";
-            // 
             // frmVentaAuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -134,7 +134,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmVentaAuto";
-            this.Text = "frmVentaAuto";
+            this.Text = "Autos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -145,13 +145,13 @@
 
         private System.Windows.Forms.Label lblRegistros;
         private System.Windows.Forms.DataGridView dgvDatos;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idauto;
         private System.Windows.Forms.DataGridViewTextBoxColumn marca;
         private System.Windows.Forms.DataGridViewTextBoxColumn modelo;
         private System.Windows.Forms.DataGridViewTextBoxColumn nacionalidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn observacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn precio;
-        private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.Label label1;
     }
 }

@@ -47,5 +47,12 @@ namespace LoteAutosGit.Views
         {
             this.lblRegistro.Text = $"Registros: {this.dgvDatosPropietario.RowCount}";
         }
+
+        private void dgvDatosPropietario_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int id = int.Parse(this.dgvDatosPropietario.Rows[e.RowIndex].Cells[0].Value.ToString());
+            var auto = new frmAddAuto(id);
+            auto.ShowDialog();
+        }
     }
 }

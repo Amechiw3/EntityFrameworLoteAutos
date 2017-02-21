@@ -22,32 +22,11 @@ namespace LoteAutosGit.Views
         {
             InitializeComponent();
             idauto = id;
-            webcam = new Webcam();
-            webcam.InitializeWebCam(ref pcbFoto);
         }
 
-        private void btnTomar_Click(object sender, EventArgs e)
+        private void frmGaleria_Load(object sender, EventArgs e)
         {
-            webcam.Start();
-        }
-
-        private void btnExaminar_Click(object sender, EventArgs e)
-        {
-            webcam.Stop();
-            Webcam.SaveImage(pcbFoto);
-        }
-
-        private void btnAceptar_Click(object sender, EventArgs e)
-        {
-            var datos = new galeria();
-            webcam.Stop();
-            datos.fotografia = Webcam.SaveImageCapture(pcbFoto.Image);
-            clsGaleria.saveGaleria(datos, idauto);
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            this.dataGridView1.DataSource = clsAuto.getfoto(idauto);
         }
     }
 }

@@ -33,7 +33,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtNacionalidad = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.txtNoSerie = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -73,6 +72,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnTomarFoto = new System.Windows.Forms.Button();
             this.pcbFoto = new System.Windows.Forms.PictureBox();
+            this.cboNacionalidad = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorINE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbFoto)).BeginInit();
             this.SuspendLayout();
@@ -107,17 +107,10 @@
             this.btnAgregar.Text = "Aceptar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // txtNacionalidad
-            // 
-            this.txtNacionalidad.Location = new System.Drawing.Point(611, 280);
-            this.txtNacionalidad.Name = "txtNacionalidad";
-            this.txtNacionalidad.Size = new System.Drawing.Size(157, 26);
-            this.txtNacionalidad.TabIndex = 89;
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(479, 286);
+            this.label18.Location = new System.Drawing.Point(479, 288);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(100, 20);
             this.label18.TabIndex = 88;
@@ -433,16 +426,28 @@
             this.pcbFoto.TabIndex = 49;
             this.pcbFoto.TabStop = false;
             // 
+            // cboNacionalidad
+            // 
+            this.cboNacionalidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboNacionalidad.FormattingEnabled = true;
+            this.cboNacionalidad.Items.AddRange(new object[] {
+            "Mexicano",
+            "Americano"});
+            this.cboNacionalidad.Location = new System.Drawing.Point(610, 280);
+            this.cboNacionalidad.Name = "cboNacionalidad";
+            this.cboNacionalidad.Size = new System.Drawing.Size(158, 28);
+            this.cboNacionalidad.TabIndex = 93;
+            // 
             // Addpropietario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(780, 412);
+            this.Controls.Add(this.cboNacionalidad);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.txtObservaciones);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.txtNacionalidad);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.txtNoSerie);
             this.Controls.Add(this.label19);
@@ -499,7 +504,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox txtNacionalidad;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtNoSerie;
         private System.Windows.Forms.Label label19;
@@ -539,5 +543,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnTomarFoto;
         private System.Windows.Forms.PictureBox pcbFoto;
+        private System.Windows.Forms.ComboBox cboNacionalidad;
     }
 }

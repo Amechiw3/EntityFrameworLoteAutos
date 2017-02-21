@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using LoteAutosGit.Models;
 using System.Data.Entity;
+using System.Drawing;
+using System.IO;
 
 namespace LoteAutosGit.Controllers
 {
@@ -97,6 +99,28 @@ namespace LoteAutosGit.Controllers
             {
                 var ctx = new DataModel();
                 return ctx.pagos.Where(r => r.autos.idauto == idcarro).FirstOrDefault();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public int idauto { get; set; }
+        public Image fotografia { get; set; }
+
+        public static List<clsAuto> getfoto(int auto)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return (from r in ctx.galerias.Where(t => t.autos.idauto == auto).ToList()
+                        select new clsAuto
+                        {
+                            idauto = r.idgaleria,
+                            fotografia = Image.FromFile(Directory.GetCurrentDirectory() + @"\Propietario\" + r.fotografia)
+                        }).ToList();
             }
             catch (Exception)
             {

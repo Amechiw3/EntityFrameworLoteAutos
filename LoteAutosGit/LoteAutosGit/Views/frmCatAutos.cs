@@ -39,7 +39,7 @@ namespace LoteAutosGit.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var addprop = new frmAddAuto();
+            var addprop = new buscarPropietario();
             addprop.ShowDialog();
         }
 

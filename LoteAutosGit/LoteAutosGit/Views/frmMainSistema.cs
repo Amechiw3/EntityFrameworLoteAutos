@@ -41,8 +41,10 @@ namespace LoteAutosGit.Views
 
         private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var venta = new AddVenta();
-            venta.ShowDialog();
+            /*var venta = new AddVenta();
+            venta.ShowDialog();*/
+            var venta = new frmVentaComprador();
+            venta.Show();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
