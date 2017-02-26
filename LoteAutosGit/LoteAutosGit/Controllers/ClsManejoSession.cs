@@ -56,11 +56,12 @@ namespace LoteAutosGit.Controllers
                 {
                     try
                     {
-                        using (var ctx = new DataModel())
+                        var ctx = new DataModel();
+                        //permisonegado pNegado = usuario.niveles.permisosnegados.Where(r => r.permisos.idpermiso == ValidarPermiso).FirstOrDefault();
+                        permisonegado pNegados = ctx.permisosnegados.Where(r => r.permisos.idpermiso == ValidarPermiso && r.niveles.idnivel == this.usuario.niveles.idnivel && r.status == true).FirstOrDefault();
+                        if (pNegados == null)
                         {
-                            permisonegado pNegado = usuario.niveles.permisosnegados.Where(r => r.permisos.idpermiso == ValidarPermiso).FirstOrDefault();
-                            if (pNegado == null)
-                                tiene = true;
+                            tiene = true;
                         }
                         return tiene;
                     }
@@ -77,20 +78,32 @@ namespace LoteAutosGit.Controllers
 
     public enum enumPermisosActivos
     {
-        //Vendedor
-        vendedor_Ventas = 2,
-        vendedor_Archivo = 1,
-
-       //Gerente
-
-        
-
-
         //administrador
-        administrador_ventas = 2,
-        administrador_propietarios = 3,
-        administrador_autos = 4,
-        administrador_Comprador = 5,
+        ventas_add = 1,
+        propietarios_add = 2,
+        autos_add = 3,
+        comprador_add = 4,
+
+        ventas_upd = 5,
+        propietarios_upd = 6,
+        autos_upd = 7,
+        comprador_upd = 8,
+
+        ventas_del = 9,
+        propietarios_del = 10,
+        autos_del = 11,
+        comprador_del = 12,
+
+        usuarios_add = 13,
+        usuarios_upd = 14,
+        usuarios_del = 15
+        //Vendedor
+
+
+        //Gerente
+
+
+
 
     }
 }

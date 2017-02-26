@@ -34,7 +34,7 @@
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.propietariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIUsuarios = new System.Windows.Forms.ToolStripMenuItem();
-            this.permisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMIpermisos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             this.ventasToolStripMenuItem,
             this.propietariosToolStripMenuItem,
             this.TSMIUsuarios,
-            this.permisosToolStripMenuItem});
+            this.TSMIpermisos});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(584, 24);
@@ -88,11 +88,12 @@
             this.TSMIUsuarios.Text = "Usuarios";
             this.TSMIUsuarios.Click += new System.EventHandler(this.TSMIUsuarios_Click);
             // 
-            // permisosToolStripMenuItem
+            // TSMIpermisos
             // 
-            this.permisosToolStripMenuItem.Name = "permisosToolStripMenuItem";
-            this.permisosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.permisosToolStripMenuItem.Text = "Permisos";
+            this.TSMIpermisos.Name = "TSMIpermisos";
+            this.TSMIpermisos.Size = new System.Drawing.Size(67, 20);
+            this.TSMIpermisos.Text = "Permisos";
+            this.TSMIpermisos.Click += new System.EventHandler(this.TSMIpermisos_Click);
             // 
             // frmMainSistema
             // 
@@ -125,6 +126,6 @@
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem propietariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem TSMIUsuarios;
-        private System.Windows.Forms.ToolStripMenuItem permisosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TSMIpermisos;
     }
 }

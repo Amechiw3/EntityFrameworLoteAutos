@@ -70,5 +70,11 @@ namespace LoteAutosGit.Views
             var usuario = new View.frmUsuarios();
             usuario.ShowDialog();
         }
+
+        private void TSMIpermisos_Click(object sender, EventArgs e)
+        {
+            var niveles = new View.frmNiveles();
+            niveles.ShowDialog();
+        }
     }
 }

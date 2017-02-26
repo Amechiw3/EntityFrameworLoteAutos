@@ -89,6 +89,7 @@
     <Compile Include="Controllers\clsManejoPropietarios.cs" />
     <Compile Include="Controllers\ClsManejoSession.cs" />
     <Compile Include="Controllers\clsPago.cs" />
+    <Compile Include="Controllers\clsPermisosnegados.cs" />
     <Compile Include="Controllers\clsventa.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

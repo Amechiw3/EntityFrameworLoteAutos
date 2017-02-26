@@ -39,5 +39,41 @@ namespace LoteAutosGit.Controllers
                 throw;
             }
         }
+
+        public static List<permiso> getPermisosAll()
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.permisos.ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static void saveNivel(nivel datosnivel)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                if (datosnivel.idnivel > 0)
+                {
+                    ctx.Entry(datosnivel).State = EntityState.Modified;
+                }
+                else
+                {
+                    ctx.Entry(datosnivel).State = EntityState.Added;
+                }
+                ctx.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

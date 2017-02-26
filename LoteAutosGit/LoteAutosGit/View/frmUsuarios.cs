@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using LoteAutosGit.Models;
 using LoteAutosGit.Controllers;
+using LoteAutosGit.Views;
 
 namespace LoteAutosGit.View
 {
@@ -23,6 +24,8 @@ namespace LoteAutosGit.View
         private void frmUsuarios_Load(object sender, EventArgs e)
         {
             cargarNiveles();
+            procesarPermisos();
+
         }
 
         private void btnAcceptar_Click(object sender, EventArgs e)
@@ -45,6 +48,7 @@ namespace LoteAutosGit.View
                 usuarios.email = txtCorreo.Text.Trim();
                 //usuarios.niveles = clsManejoNivel.getNivel(int.Parse(cboNivel.SelectedValue.ToString()));
                 ClsManejadorUsers.SaveUsers(usuarios, int.Parse(cboNivel.SelectedValue.ToString()));
+                this.Close();
             }
         }
 
@@ -60,6 +64,21 @@ namespace LoteAutosGit.View
             this.cboNivel.DataSource = clsManejoNivel.getNivelAll();
             this.cboNivel.ValueMember = "idnivel";
             this.cboNivel.DisplayMember = "nombre";
+        }
+
+        public void procesarPermisos()
+        {
+            int permiso = 0;
+            foreach (object obj in this.Controls)
+            {
+                if (obj is Button)
+                {
+                    Button btn = (Button)obj;
+                    permiso = Convert.ToInt32(btn.Tag);
+                    var SessionActiva = frmMainSistema.SessionActiva;
+                    btn.Enabled = SessionActiva.TienePermisos(permiso);
+                }
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
