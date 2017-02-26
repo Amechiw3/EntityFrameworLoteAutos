@@ -85,7 +85,6 @@
     <Compile Include="Controllers\clsGaleria.cs" />
     <Compile Include="Controllers\ClsManejadorUsers.cs" />
     <Compile Include="Controllers\clsManejoAutos.cs" />
-    <Compile Include="Controllers\clsManejoNivel.cs" />
     <Compile Include="Controllers\clsManejoPropietarios.cs" />
     <Compile Include="Controllers\ClsManejoSession.cs" />
     <Compile Include="Controllers\clsPago.cs" />
@@ -95,6 +94,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmVenta.Designer.cs">
+      <DependentUpon>frmVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201702141429329_INICIAL.cs" />
     <Compile Include="Migrations\201702141429329_INICIAL.Designer.cs">
@@ -209,12 +214,9 @@
     <Compile Include="Views\frmVentaComprador.Designer.cs">
       <DependentUpon>frmVentaComprador.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\frmUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmUsuarios.Designer.cs">
-      <DependentUpon>frmUsuarios.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="View\frmVenta.resx">
+      <DependentUpon>frmVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702141429329_INICIAL.resx">
       <DependentUpon>201702141429329_INICIAL.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,9 +277,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmVentaComprador.resx">
       <DependentUpon>frmVentaComprador.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\frmUsuarios.resx">
-      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Models\DiagramModel.cd" />
     <None Include="packages.config" />
