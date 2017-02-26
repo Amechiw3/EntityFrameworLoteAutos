@@ -43,7 +43,7 @@ namespace LoteAutosGit.Views
         {
             /*var venta = new AddVenta();
             venta.ShowDialog();*/
-            var venta = new frmVentaComprador();
+            var venta = new frmVenta();
             venta.Show();
         }
 

@@ -53,7 +53,14 @@ namespace LoteAutosGit.Controllers
             try
             {
                 var ctx = new DataModel();
-                return ctx.compradores.Where(r => r.nombre.Contains(Ine)).ToList();
+                return 
+                (from r in ctx.compradores.Where(r => r.nombre.Contains(Ine)).ToList()
+                 select new comprador
+                 {
+                     idcomprador = r.idcomprador,
+                     nombre = $"{r.nombre} {r.appaterno} {r.apmaterno}",
+                     Ine = r.Ine
+                 }).ToList();
             }
             catch (Exception exc)
             {
@@ -71,7 +78,8 @@ namespace LoteAutosGit.Controllers
                         select new comprador
                         {
                             idcomprador = r.idcomprador,
-                            nombre = $"{r.nombre} {r.appaterno} {r.apmaterno}"
+                            nombre = $"{r.nombre} {r.appaterno} {r.apmaterno}",
+                            Ine = r.Ine
                         }).ToList();
 
             }

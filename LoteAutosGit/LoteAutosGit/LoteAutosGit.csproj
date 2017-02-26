@@ -100,6 +100,12 @@
     <Compile Include="Migrations\201702260738249_new.Designer.cs">
       <DependentUpon>201702260738249_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmListaCompradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmListaCompradores.Designer.cs">
+      <DependentUpon>FrmListaCompradores.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmNiveles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     </Compile>
     <EmbeddedResource Include="Migrations\201702260738249_new.resx">
       <DependentUpon>201702260738249_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmListaCompradores.resx">
+      <DependentUpon>FrmListaCompradores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmNiveles.resx">
       <DependentUpon>frmNiveles.cs</DependentUpon>
