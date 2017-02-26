@@ -106,6 +106,7 @@
             this.btnAgregar.TabIndex = 90;
             this.btnAgregar.Text = "Aceptar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label18
             // 

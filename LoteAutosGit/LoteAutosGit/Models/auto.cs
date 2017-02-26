@@ -43,6 +43,8 @@ namespace LoteAutosGit.Models
         [StringLength(64)]
         public String Observacion { get; set; }
 
+        public bool estado { get; set; }
+
         public propietario propietarios { get; set; }
 
         public virtual ICollection<galeria> galerias { get; set; }

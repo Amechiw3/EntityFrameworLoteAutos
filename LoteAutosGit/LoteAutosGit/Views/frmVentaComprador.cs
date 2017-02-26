@@ -48,9 +48,18 @@ namespace LoteAutosGit.Views
         {
             if (this.dgvDatosPropietario.SelectedRows.Count > 0)
             {
-                MessageBox.Show("Selecciono una");
+                /*int id = int.Parse(this.dgvDatosPropietario.Rows[e.RowIndex].Cells[0].Value.ToString());
+                var autos = new frmVentaAuto(id);
+                autos.ShowDialog();*/
             }
             else { MessageBox.Show("No selecciono nada"); }
+        }
+
+        private void dgvDatosPropietario_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int id = int.Parse(this.dgvDatosPropietario.Rows[e.RowIndex].Cells[0].Value.ToString());
+            var autos = new frmVentaAuto(id);
+            autos.ShowDialog();
         }
     }
 }
