@@ -50,8 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pcbFoto = new System.Windows.Forms.PictureBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.txtIva = new System.Windows.Forms.TextBox();
             this.txtSubtotal = new System.Windows.Forms.TextBox();
@@ -60,11 +58,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnPagar = new System.Windows.Forms.Button();
             this.gbAutos = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.gbGalerias = new System.Windows.Forms.GroupBox();
-            this.dgvGaleria = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvAutos = new System.Windows.Forms.DataGridView();
             this.idauto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,13 +65,17 @@
             this.nacionalidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.observacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.gbGalerias = new System.Windows.Forms.GroupBox();
+            this.dgvGaleria = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gbComprador.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbFoto)).BeginInit();
             this.gbAutos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAutos)).BeginInit();
             this.gbGalerias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGaleria)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAutos)).BeginInit();
             this.SuspendLayout();
             // 
             // gbComprador
@@ -107,8 +104,6 @@
             this.gbComprador.Controls.Add(this.label2);
             this.gbComprador.Controls.Add(this.txtNombre);
             this.gbComprador.Controls.Add(this.label1);
-            this.gbComprador.Controls.Add(this.button1);
-            this.gbComprador.Controls.Add(this.pcbFoto);
             this.gbComprador.Location = new System.Drawing.Point(13, 14);
             this.gbComprador.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbComprador.Name = "gbComprador";
@@ -117,6 +112,7 @@
             this.gbComprador.TabIndex = 0;
             this.gbComprador.TabStop = false;
             this.gbComprador.Text = "Comprador";
+            this.gbComprador.Enter += new System.EventHandler(this.gbComprador_Enter);
             // 
             // txtPais
             // 
@@ -136,15 +132,15 @@
             // 
             // txtCiudad
             // 
-            this.txtCiudad.Location = new System.Drawing.Point(133, 156);
+            this.txtCiudad.Location = new System.Drawing.Point(10, 156);
             this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.Size = new System.Drawing.Size(181, 26);
+            this.txtCiudad.Size = new System.Drawing.Size(304, 26);
             this.txtCiudad.TabIndex = 18;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(129, 133);
+            this.label13.Location = new System.Drawing.Point(7, 133);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(59, 20);
             this.label13.TabIndex = 17;
@@ -202,15 +198,15 @@
             // 
             // txtCalle
             // 
-            this.txtCalle.Location = new System.Drawing.Point(133, 104);
+            this.txtCalle.Location = new System.Drawing.Point(10, 104);
             this.txtCalle.Name = "txtCalle";
-            this.txtCalle.Size = new System.Drawing.Size(181, 26);
+            this.txtCalle.Size = new System.Drawing.Size(304, 26);
             this.txtCalle.TabIndex = 10;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(129, 81);
+            this.label9.Location = new System.Drawing.Point(7, 81);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 20);
             this.label9.TabIndex = 9;
@@ -243,6 +239,7 @@
             this.btnBuscar.TabIndex = 21;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtApMaterno
             // 
@@ -278,42 +275,19 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(133, 52);
+            this.txtNombre.Location = new System.Drawing.Point(10, 52);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(181, 26);
+            this.txtNombre.Size = new System.Drawing.Size(304, 26);
             this.txtNombre.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(129, 29);
+            this.label1.Location = new System.Drawing.Point(7, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombre";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(9, 186);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 52);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Tomar Foto";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pcbFoto
-            // 
-            this.pcbFoto.BackColor = System.Drawing.SystemColors.Highlight;
-            this.pcbFoto.Image = global::LoteAutosGit.Properties.Resources.User_Login;
-            this.pcbFoto.Location = new System.Drawing.Point(9, 29);
-            this.pcbFoto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pcbFoto.Name = "pcbFoto";
-            this.pcbFoto.Size = new System.Drawing.Size(113, 147);
-            this.pcbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pcbFoto.TabIndex = 0;
-            this.pcbFoto.TabStop = false;
             // 
             // txtTotal
             // 
@@ -396,6 +370,62 @@
             this.gbAutos.TabStop = false;
             this.gbAutos.Text = "Autos";
             // 
+            // dgvAutos
+            // 
+            this.dgvAutos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvAutos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.dgvAutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idauto,
+            this.marca,
+            this.modelo,
+            this.nacionalidad,
+            this.observacion,
+            this.precio});
+            this.dgvAutos.Location = new System.Drawing.Point(10, 51);
+            this.dgvAutos.Name = "dgvAutos";
+            this.dgvAutos.Size = new System.Drawing.Size(992, 164);
+            this.dgvAutos.TabIndex = 5;
+            this.dgvAutos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAutos_CellDoubleClick);
+            // 
+            // idauto
+            // 
+            this.idauto.DataPropertyName = "idauto";
+            this.idauto.HeaderText = "ID";
+            this.idauto.Name = "idauto";
+            // 
+            // marca
+            // 
+            this.marca.DataPropertyName = "marca";
+            this.marca.HeaderText = "marca";
+            this.marca.Name = "marca";
+            // 
+            // modelo
+            // 
+            this.modelo.DataPropertyName = "modelo";
+            this.modelo.HeaderText = "modelo";
+            this.modelo.Name = "modelo";
+            // 
+            // nacionalidad
+            // 
+            this.nacionalidad.DataPropertyName = "nacionalidad";
+            this.nacionalidad.HeaderText = "Nacionalidad";
+            this.nacionalidad.Name = "nacionalidad";
+            // 
+            // observacion
+            // 
+            this.observacion.DataPropertyName = "observacion";
+            this.observacion.HeaderText = "Observaciones";
+            this.observacion.Name = "observacion";
+            // 
+            // precio
+            // 
+            this.precio.DataPropertyName = "precio";
+            this.precio.HeaderText = "Precio";
+            this.precio.Name = "precio";
+            // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(71, 19);
@@ -454,62 +484,6 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
-            // dgvAutos
-            // 
-            this.dgvAutos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvAutos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.dgvAutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idauto,
-            this.marca,
-            this.modelo,
-            this.nacionalidad,
-            this.observacion,
-            this.precio});
-            this.dgvAutos.Location = new System.Drawing.Point(10, 51);
-            this.dgvAutos.Name = "dgvAutos";
-            this.dgvAutos.Size = new System.Drawing.Size(992, 164);
-            this.dgvAutos.TabIndex = 5;
-            this.dgvAutos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAutos_CellDoubleClick);
-            // 
-            // idauto
-            // 
-            this.idauto.DataPropertyName = "idauto";
-            this.idauto.HeaderText = "ID";
-            this.idauto.Name = "idauto";
-            // 
-            // marca
-            // 
-            this.marca.DataPropertyName = "marca";
-            this.marca.HeaderText = "marca";
-            this.marca.Name = "marca";
-            // 
-            // modelo
-            // 
-            this.modelo.DataPropertyName = "modelo";
-            this.modelo.HeaderText = "modelo";
-            this.modelo.Name = "modelo";
-            // 
-            // nacionalidad
-            // 
-            this.nacionalidad.DataPropertyName = "nacionalidad";
-            this.nacionalidad.HeaderText = "Nacionalidad";
-            this.nacionalidad.Name = "nacionalidad";
-            // 
-            // observacion
-            // 
-            this.observacion.DataPropertyName = "observacion";
-            this.observacion.HeaderText = "Observaciones";
-            this.observacion.Name = "observacion";
-            // 
-            // precio
-            // 
-            this.precio.DataPropertyName = "precio";
-            this.precio.HeaderText = "Precio";
-            this.precio.Name = "precio";
-            // 
             // frmVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -528,14 +502,13 @@
             this.Load += new System.EventHandler(this.frmVenta_Load);
             this.gbComprador.ResumeLayout(false);
             this.gbComprador.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbFoto)).EndInit();
             this.gbAutos.ResumeLayout(false);
             this.gbAutos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAutos)).EndInit();
             this.gbGalerias.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGaleria)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAutos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -543,8 +516,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbComprador;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pcbFoto;
         private System.Windows.Forms.TextBox txtAppaterno;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombre;
