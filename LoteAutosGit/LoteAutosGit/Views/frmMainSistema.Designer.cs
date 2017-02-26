@@ -35,6 +35,7 @@
             this.propietariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.autosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.compradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +46,8 @@
             this.ventasToolStripMenuItem,
             this.propietariosToolStripMenuItem,
             this.autosToolStripMenuItem,
-            this.compradorToolStripMenuItem});
+            this.compradorToolStripMenuItem,
+            this.usuariosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(584, 24);
@@ -95,6 +97,12 @@
             this.compradorToolStripMenuItem.Text = "Comprador";
             this.compradorToolStripMenuItem.Click += new System.EventHandler(this.compradorToolStripMenuItem_Click);
             // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            // 
             // frmMainSistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -127,5 +135,6 @@
         private System.Windows.Forms.ToolStripMenuItem propietariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem autosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem compradorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
     }
 }
