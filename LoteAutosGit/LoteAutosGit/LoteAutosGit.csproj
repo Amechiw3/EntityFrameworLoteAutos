@@ -95,6 +95,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702260738249_new.cs" />
+    <Compile Include="Migrations\201702260738249_new.Designer.cs">
+      <DependentUpon>201702260738249_new.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +218,9 @@
     <Compile Include="Views\frmVentaComprador.Designer.cs">
       <DependentUpon>frmVentaComprador.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Migrations\201702260738249_new.resx">
+      <DependentUpon>201702260738249_new.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmVenta.resx">
       <DependentUpon>frmVenta.cs</DependentUpon>
     </EmbeddedResource>
