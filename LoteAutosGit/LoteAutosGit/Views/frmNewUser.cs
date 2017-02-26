@@ -38,7 +38,7 @@ namespace LoteAutosGit.Views
             datos.email = txt_email.Text;
             datos.nickname = txt_nick.Text;
             datos.password = txt_Pass.Text;
-            ClsManejadorUsers.SaveUsers(datos);
+            //ClsManejadorUsers.SaveUsers(datos);
 
             wMain.CargarDatos();
             this.Close();

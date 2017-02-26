@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using LoteAutosGit.Controllers;
 using LoteAutosGit.Models;
+using LoteAutosGit.Controllers;
 
 namespace LoteAutosGit.View
 {
@@ -18,6 +18,11 @@ namespace LoteAutosGit.View
         public frmUsuarios()
         {
             InitializeComponent();
+        }
+
+        private void frmUsuarios_Load(object sender, EventArgs e)
+        {
+            cargarNiveles();
         }
 
         private void btnAcceptar_Click(object sender, EventArgs e)
@@ -31,22 +36,35 @@ namespace LoteAutosGit.View
                 usuarios.calle = txtCalle.Text.Trim();
                 usuarios.ncasa = txtNoExterno.Text.Trim();
                 usuarios.avenida = txtAvenida.Text.Trim();
+                usuarios.colonia = txtColonia.Text.Trim();
                 usuarios.ciudad = txtCiudad.Text.Trim();
                 usuarios.pais = txtPais.Text.Trim();
                 /**/
                 usuarios.nickname = txtUsuario.Text.Trim();
                 usuarios.password = txtContraseña.Text.Trim();
                 usuarios.email = txtCorreo.Text.Trim();
-                usuarios.niveles = clsManejoNivel.getNivel(int.Parse(cboNivel.SelectedValue.ToString()));
-                ClsManejadorUsers.SaveUsers(usuarios);
+                //usuarios.niveles = clsManejoNivel.getNivel(int.Parse(cboNivel.SelectedValue.ToString()));
+                ClsManejadorUsers.SaveUsers(usuarios, int.Parse(cboNivel.SelectedValue.ToString()));
             }
         }
 
         public bool validarcampos()
         {
-            return (txtNombre.Text != "" && txtAppaterno.Text != "" && txtApmaterno.Text != "" && txtCalle.Text != "" && 
+            return (txtNombre.Text != "" && txtAppaterno.Text != "" && txtApmaterno.Text != "" && txtCalle.Text != "" &&
                     txtNoExterno.Text != "" && txtAvenida.Text != "" && txtCiudad.Text != "" && txtPais.Text != "" &&
-                    txtUsuario.Text != "" && txtContraseña.Text != "" && txtCorreo.Text != "" & cboNivel.SelectedIndex > 0);
+                    txtUsuario.Text != "" && txtContraseña.Text != "" && txtCorreo.Text != "");
+        }
+
+        public void cargarNiveles()
+        {
+            this.cboNivel.DataSource = clsManejoNivel.getNivelAll();
+            this.cboNivel.ValueMember = "idnivel";
+            this.cboNivel.DisplayMember = "nombre";
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

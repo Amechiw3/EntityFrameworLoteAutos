@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 using LoteAutosGit.Models;
 using System.Data.Entity;
-
 
 namespace LoteAutosGit.Controllers
 {
@@ -18,6 +18,20 @@ namespace LoteAutosGit.Controllers
             {
                 var ctx = new DataModel();
                 return ctx.niveles.Where(r => r.idnivel == id).FirstOrDefault();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static List<nivel> getNivelAll()
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.niveles.ToList();
             }
             catch (Exception)
             {

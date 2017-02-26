@@ -27,22 +27,24 @@ namespace LoteAutosGit.Controllers
             }
         }
 
-        public static void SaveUsers(usuario nUser)
+        public static void SaveUsers(usuario nUser, int idnivel)
         {
             try
             {
-                using (var ctx = new DataModel())
+                var ctx = new DataModel();
+                nivel nvl = ctx.niveles.Where(r => r.idnivel == idnivel).FirstOrDefault();
+                ctx.niveles.Attach(nvl);
+                nUser.niveles = nvl;
+
+                if (nUser.idusuario > 0) //Realiza una actualizacion
                 {
-                    if (nUser.idusuario > 0) //Realiza una actualizacion
-                    {
-                        ctx.Entry(nUser).State = EntityState.Modified;
-                    }
-                    else
-                    {    // Agregar
-                        ctx.Entry(nUser).State = EntityState.Added;
-                    }
-                    ctx.SaveChanges();
+                    ctx.Entry(nUser).State = EntityState.Modified;
                 }
+                else
+                {    // Agregar
+                    ctx.Entry(nUser).State = EntityState.Added;
+                }
+                ctx.SaveChanges();
             }
             catch (Exception)
             {

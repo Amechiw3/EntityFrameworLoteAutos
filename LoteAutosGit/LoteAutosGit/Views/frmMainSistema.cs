@@ -64,5 +64,11 @@ namespace LoteAutosGit.Views
                 }
             }
         }
+
+        private void TSMIUsuarios_Click(object sender, EventArgs e)
+        {
+            var usuario = new View.frmUsuarios();
+            usuario.ShowDialog();
+        }
     }
 }
