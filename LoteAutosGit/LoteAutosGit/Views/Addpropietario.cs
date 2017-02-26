@@ -60,6 +60,7 @@ namespace LoteAutosGit.Views
                     auto.Observacion = txtObservaciones.Text;
                     auto.propietarios = datos;
                     clsManejoAutos.SaveAuto(auto);
+                    this.Close();
                 }
                 else
                 {
@@ -129,6 +130,12 @@ namespace LoteAutosGit.Views
             {
                 webcam.Stop();
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
         }
     }
 }

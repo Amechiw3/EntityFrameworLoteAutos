@@ -106,6 +106,7 @@
             this.btnAgregar.TabIndex = 90;
             this.btnAgregar.Text = "Aceptar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label18
             // 
@@ -140,6 +141,7 @@
             this.btnCancelar.TabIndex = 85;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtColor
             // 
