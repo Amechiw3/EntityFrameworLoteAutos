@@ -95,10 +95,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmVenta.cs">
+    <Compile Include="View\frmVenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmVenta.Designer.cs">
+    <Compile Include="View\frmVenta.Designer.cs">
       <DependentUpon>frmVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201702141429329_INICIAL.cs" />
@@ -214,7 +214,7 @@
     <Compile Include="Views\frmVentaComprador.Designer.cs">
       <DependentUpon>frmVentaComprador.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmVenta.resx">
+    <EmbeddedResource Include="View\frmVenta.resx">
       <DependentUpon>frmVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702141429329_INICIAL.resx">
@@ -310,9 +310,7 @@
   <ItemGroup>
     <None Include="Resources\User-Login.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

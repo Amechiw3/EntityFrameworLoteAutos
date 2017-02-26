@@ -18,7 +18,7 @@ namespace LoteAutosGit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMainSistema());
+            Application.Run(new frmVenta());
         }
     }
 }
