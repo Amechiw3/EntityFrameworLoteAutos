@@ -111,8 +111,8 @@ namespace LoteAutosGit.Views
 
         private void btnReporte_Click(object sender, EventArgs e)
         {
-            //var reporte = new frmReporteVentas();
-            //reporte.ShowDialog();
+            var reporte = new frmReporteVentas();
+            reporte.ShowDialog();
         }
     }
 }

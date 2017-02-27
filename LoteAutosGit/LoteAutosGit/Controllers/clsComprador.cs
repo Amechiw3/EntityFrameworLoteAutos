@@ -28,8 +28,7 @@ namespace LoteAutosGit.Controllers
         {
             try
             {
-                var ctx = new DataModel();
-                
+                var ctx = new DataModel();               
 
                 if (ine.idcomprador > 0) //Actualizar
                 {

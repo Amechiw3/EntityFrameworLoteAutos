@@ -18,7 +18,7 @@ namespace LoteAutosGit.Controllers
             try
             {
                 var ctx = new DataModel();
-                return ctx.autos.ToList();
+                return ctx.autos.Where(x => x.estado == true).ToList();
             }
             catch (Exception ex)
             {
@@ -32,7 +32,7 @@ namespace LoteAutosGit.Controllers
             try
             {
                 var ctx = new DataModel();
-                return ctx.autos.Include("propietarios").Where(r => r.marca.Contains(dato) || r.modelo.Contains(dato)).ToList();
+                return ctx.autos.Include("propietarios").Where(r => r.marca.Contains(dato) || r.modelo.Contains(dato) && r.estado == true).ToList();
             }
             catch (Exception ex)
             {
@@ -121,6 +121,44 @@ namespace LoteAutosGit.Controllers
                             idauto = r.idgaleria,
                             fotografia = Image.FromFile(Directory.GetCurrentDirectory() + @"\Propietario\" + r.fotografia)
                         }).ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public static void SaveAuto(int datos)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                var automovil = ctx.autos.Where(x => x.idauto == datos).FirstOrDefault();
+                automovil.estado = false;
+                if (automovil.idauto > 0) //Actualizar
+                {
+                    ctx.Entry(automovil).State = EntityState.Modified;
+                }
+                else // Agregar
+                {
+                    ctx.Entry(automovil).State = EntityState.Added;
+                }
+                ctx.SaveChanges();
+            }
+            catch (Exception exc)
+            {
+
+                throw;
+            }
+        }
+
+        public static auto returnauto(int id)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.autos.Where(x => x.idauto == id).FirstOrDefault();
             }
             catch (Exception)
             {

@@ -48,7 +48,7 @@ namespace LoteAutosGit
             llenar.ciudad = txtCiudad.Text;
             llenar.pais = txtPais.Text;
 
-            var pag = new frmPago(llenar, idautos);
+            var pag = new frmPago(llenar, idautos, double.Parse(txtTotal.Text), this);
             pag.ShowDialog();
         }
 
@@ -67,9 +67,14 @@ namespace LoteAutosGit
 
         private void frmVenta_Load(object sender, EventArgs e)
         {
-            this.dgvAutos.AutoGenerateColumns = false;
-            this.dgvAutos.DataSource = clsAuto.getAll();
-           // this.dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            llenarautos();
+        }
+
+        public void llenarautos()
+        {
+            dgvAutos.AutoGenerateColumns = false;
+            dgvAutos.DataSource = clsAuto.getAll();
+            // this.dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         int idcliente = 0;
