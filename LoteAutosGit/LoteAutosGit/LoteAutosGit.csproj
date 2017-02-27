@@ -107,6 +107,12 @@
     <Compile Include="View\FrmListaCompradores.Designer.cs">
       <DependentUpon>FrmListaCompradores.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmListaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmListaUsuarios.Designer.cs">
+      <DependentUpon>frmListaUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmNiveles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmListaCompradores.resx">
       <DependentUpon>FrmListaCompradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmListaUsuarios.resx">
+      <DependentUpon>frmListaUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmNiveles.resx">
       <DependentUpon>frmNiveles.cs</DependentUpon>

@@ -92,6 +92,7 @@
             // 
             this.TSMIpermisos.Name = "TSMIpermisos";
             this.TSMIpermisos.Size = new System.Drawing.Size(67, 20);
+            this.TSMIpermisos.Tag = "16";
             this.TSMIpermisos.Text = "Permisos";
             this.TSMIpermisos.Click += new System.EventHandler(this.TSMIpermisos_Click);
             // 

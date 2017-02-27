@@ -48,6 +48,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnNuevoNivel = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNiveles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPermisoNegados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -179,11 +180,12 @@
             // btnBloquear
             // 
             this.btnBloquear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBloquear.Location = new System.Drawing.Point(424, 505);
+            this.btnBloquear.Location = new System.Drawing.Point(326, 505);
             this.btnBloquear.Name = "btnBloquear";
             this.btnBloquear.Size = new System.Drawing.Size(92, 45);
             this.btnBloquear.TabIndex = 7;
-            this.btnBloquear.Text = "Aceptar";
+            this.btnBloquear.Tag = "16";
+            this.btnBloquear.Text = "Denegar";
             this.btnBloquear.UseVisualStyleBackColor = true;
             this.btnBloquear.Click += new System.EventHandler(this.btnBloquear_Click);
             // 
@@ -222,6 +224,7 @@
             this.btnNuevoNivel.Name = "btnNuevoNivel";
             this.btnNuevoNivel.Size = new System.Drawing.Size(92, 35);
             this.btnNuevoNivel.TabIndex = 11;
+            this.btnNuevoNivel.Tag = "16";
             this.btnNuevoNivel.Text = "Nuevo";
             this.btnNuevoNivel.UseVisualStyleBackColor = true;
             this.btnNuevoNivel.Click += new System.EventHandler(this.btnNuevoNivel_Click);
@@ -230,12 +233,23 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(424, 505);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(92, 45);
+            this.btnCerrar.TabIndex = 12;
+            this.btnCerrar.Text = "Cancelar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // frmNiveles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(528, 562);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnNuevoNivel);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
@@ -282,5 +296,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnNuevoNivel;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }

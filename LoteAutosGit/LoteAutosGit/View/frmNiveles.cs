@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using LoteAutosGit.Controllers;
+using LoteAutosGit.Views;
 using LoteAutosGit.Models;
 
 namespace LoteAutosGit.View
@@ -23,6 +24,7 @@ namespace LoteAutosGit.View
         private void frmNiveles_Load(object sender, EventArgs e)
         {
             cargarNiveles();
+            procesarPermisos();
         }
 
         public void cargarNiveles()
@@ -42,6 +44,11 @@ namespace LoteAutosGit.View
                 var permisosnegados = new permisonegado();
                 clsPermisosnegados.savePermisos(permisosnegados, idniveles, permiso);
                 this.Close();
+            }
+            else
+            {
+                errorProvider1.Clear();
+                errorProvider1.SetError(dgvNiveles, "seleccione un nivel de la lista");
             }
         }
 
@@ -75,11 +82,31 @@ namespace LoteAutosGit.View
             }
         }
 
+        public void procesarPermisos()
+        {
+            int permiso = 0;
+            foreach (object obj in this.Controls)
+            {
+                if (obj is Button)
+                {
+                    Button tsmi = (Button)obj;
+                    permiso = Convert.ToInt32(tsmi.Tag);
+                    var SessionActiva = frmMainSistema.SessionActiva;
+                    tsmi.Enabled = SessionActiva.TienePermisos(permiso);
+                }
+            }
+        }
+
         private void btnNuevoNivel_Click(object sender, EventArgs e)
         {
             idniveles = 0;
             textBox1.Text = "";
             textBox2.Clear();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

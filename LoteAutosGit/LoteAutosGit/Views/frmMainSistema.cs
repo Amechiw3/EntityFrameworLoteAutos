@@ -62,6 +62,7 @@ namespace LoteAutosGit.Views
                 {
                     this.Close();
                 }
+                procesarPermisos();
             }
         }
 
@@ -75,6 +76,21 @@ namespace LoteAutosGit.Views
         {
             var niveles = new View.frmNiveles();
             niveles.ShowDialog();
+        }
+
+        public void procesarPermisos()
+        {
+            int permiso = 0;
+            foreach (object obj in this.Controls)
+            {
+                if (obj is ToolStripMenuItem)
+                {
+                    ToolStripMenuItem tsmi = (ToolStripMenuItem)obj;
+                    permiso = Convert.ToInt32(tsmi.Tag);
+                    //var SessionActiva = frmMainSistema.SessionActiva;
+                    tsmi.Enabled = SessionActiva.TienePermisos(permiso);
+                }                                
+            }
         }
     }
 }

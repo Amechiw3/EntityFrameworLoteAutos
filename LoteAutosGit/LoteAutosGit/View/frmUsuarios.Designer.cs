@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtPais = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtCiudad = new System.Windows.Forms.TextBox();
@@ -46,8 +48,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cboNivel = new System.Windows.Forms.ComboBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtContraseña = new System.Windows.Forms.TextBox();
@@ -56,10 +59,14 @@
             this.label18 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAcceptar = new System.Windows.Forms.Button();
-            this.cboNivel = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtRePassword = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -82,14 +89,23 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(18, 18);
+            this.groupBox1.Location = new System.Drawing.Point(13, 52);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(603, 193);
+            this.groupBox1.Size = new System.Drawing.Size(612, 192);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Personales";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 76);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 20);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Calle";
             // 
             // txtPais
             // 
@@ -97,6 +113,7 @@
             this.txtPais.Name = "txtPais";
             this.txtPais.Size = new System.Drawing.Size(208, 26);
             this.txtPais.TabIndex = 39;
+            this.txtPais.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPais_KeyPress);
             // 
             // label14
             // 
@@ -113,6 +130,7 @@
             this.txtCiudad.Name = "txtCiudad";
             this.txtCiudad.Size = new System.Drawing.Size(181, 26);
             this.txtCiudad.TabIndex = 37;
+            this.txtCiudad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCiudad_KeyPress);
             // 
             // label13
             // 
@@ -129,6 +147,7 @@
             this.txtAvenida.Name = "txtAvenida";
             this.txtAvenida.Size = new System.Drawing.Size(181, 26);
             this.txtAvenida.TabIndex = 35;
+            this.txtAvenida.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAvenida_KeyPress);
             // 
             // label12
             // 
@@ -145,6 +164,7 @@
             this.txtNoExterno.Name = "txtNoExterno";
             this.txtNoExterno.Size = new System.Drawing.Size(208, 26);
             this.txtNoExterno.TabIndex = 33;
+            this.txtNoExterno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNoExterno_KeyPress);
             // 
             // label11
             // 
@@ -161,6 +181,7 @@
             this.txtColonia.Name = "txtColonia";
             this.txtColonia.Size = new System.Drawing.Size(181, 26);
             this.txtColonia.TabIndex = 31;
+            this.txtColonia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtColonia_KeyPress);
             // 
             // label10
             // 
@@ -177,6 +198,7 @@
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(181, 26);
             this.txtCalle.TabIndex = 29;
+            this.txtCalle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCalle_KeyPress);
             // 
             // txtApmaterno
             // 
@@ -184,6 +206,7 @@
             this.txtApmaterno.Name = "txtApmaterno";
             this.txtApmaterno.Size = new System.Drawing.Size(208, 26);
             this.txtApmaterno.TabIndex = 26;
+            this.txtApmaterno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApmaterno_KeyPress);
             // 
             // label3
             // 
@@ -200,6 +223,7 @@
             this.txtAppaterno.Name = "txtAppaterno";
             this.txtAppaterno.Size = new System.Drawing.Size(181, 26);
             this.txtAppaterno.TabIndex = 24;
+            this.txtAppaterno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAppaterno_KeyPress);
             // 
             // label2
             // 
@@ -216,6 +240,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(181, 26);
             this.txtNombre.TabIndex = 22;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // label1
             // 
@@ -226,17 +251,10 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "Nombre";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 76);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 20);
-            this.label4.TabIndex = 40;
-            this.label4.Text = "Calle";
-            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtRePassword);
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.cboNivel);
             this.groupBox2.Controls.Add(this.txtCorreo);
@@ -245,26 +263,44 @@
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.txtUsuario);
             this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Location = new System.Drawing.Point(13, 221);
+            this.groupBox2.Location = new System.Drawing.Point(13, 254);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(603, 164);
+            this.groupBox2.Size = new System.Drawing.Size(612, 219);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos usuario";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 160);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 20);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Nivel";
+            // 
+            // cboNivel
+            // 
+            this.cboNivel.FormattingEnabled = true;
+            this.cboNivel.Location = new System.Drawing.Point(11, 183);
+            this.cboNivel.Name = "cboNivel";
+            this.cboNivel.Size = new System.Drawing.Size(582, 28);
+            this.cboNivel.TabIndex = 27;
+            // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(385, 47);
+            this.txtCorreo.Location = new System.Drawing.Point(201, 47);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(208, 26);
+            this.txtCorreo.Size = new System.Drawing.Size(392, 26);
             this.txtCorreo.TabIndex = 26;
+            this.txtCorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCorreo_KeyPress);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(381, 24);
+            this.label16.Location = new System.Drawing.Point(197, 24);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(57, 20);
             this.label16.TabIndex = 25;
@@ -272,15 +308,17 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(198, 47);
+            this.txtContraseña.Location = new System.Drawing.Point(11, 101);
             this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '☺';
             this.txtContraseña.Size = new System.Drawing.Size(181, 26);
             this.txtContraseña.TabIndex = 24;
+            this.txtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContraseña_KeyPress);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(194, 24);
+            this.label17.Location = new System.Drawing.Point(7, 78);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(92, 20);
             this.label17.TabIndex = 23;
@@ -292,6 +330,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(181, 26);
             this.txtUsuario.TabIndex = 22;
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
             // label18
             // 
@@ -304,7 +343,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(527, 407);
+            this.btnCancelar.Location = new System.Drawing.Point(534, 481);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(94, 40);
             this.btnCancelar.TabIndex = 2;
@@ -314,7 +353,7 @@
             // 
             // btnAcceptar
             // 
-            this.btnAcceptar.Location = new System.Drawing.Point(427, 407);
+            this.btnAcceptar.Location = new System.Drawing.Point(434, 481);
             this.btnAcceptar.Name = "btnAcceptar";
             this.btnAcceptar.Size = new System.Drawing.Size(94, 40);
             this.btnAcceptar.TabIndex = 3;
@@ -323,29 +362,55 @@
             this.btnAcceptar.UseVisualStyleBackColor = true;
             this.btnAcceptar.Click += new System.EventHandler(this.btnAcceptar_Click);
             // 
-            // cboNivel
+            // btnBuscar
             // 
-            this.cboNivel.FormattingEnabled = true;
-            this.cboNivel.Location = new System.Drawing.Point(11, 128);
-            this.cboNivel.Name = "cboNivel";
-            this.cboNivel.Size = new System.Drawing.Size(582, 28);
-            this.cboNivel.TabIndex = 27;
+            this.btnBuscar.Location = new System.Drawing.Point(546, 16);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(79, 28);
+            this.btnBuscar.TabIndex = 41;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // label5
+            // txtRePassword
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 105);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 20);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Nivel";
+            this.txtRePassword.Location = new System.Drawing.Point(201, 101);
+            this.txtRePassword.Name = "txtRePassword";
+            this.txtRePassword.PasswordChar = '☻';
+            this.txtRePassword.Size = new System.Drawing.Size(392, 26);
+            this.txtRePassword.TabIndex = 30;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(197, 78);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(159, 20);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Repita la Contraseña";
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(461, 16);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(79, 28);
+            this.btnNuevo.TabIndex = 42;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(634, 459);
+            this.ClientSize = new System.Drawing.Size(638, 533);
+            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnAcceptar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox2);
@@ -359,6 +424,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -395,5 +461,10 @@
         private System.Windows.Forms.Button btnAcceptar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cboNivel;
+        private System.Windows.Forms.TextBox txtRePassword;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

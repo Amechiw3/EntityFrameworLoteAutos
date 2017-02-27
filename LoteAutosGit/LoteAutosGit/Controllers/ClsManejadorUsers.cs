@@ -90,6 +90,29 @@ namespace LoteAutosGit.Controllers
             }
         }
 
+        public static List<usuario> getAllListar(string nombre)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                //return ctx.usuarios.Where(r => r.status == true).ToList();
+                return (from r in ctx.usuarios.Where(r => r.status == true && r.nombre.Contains(nombre)).ToList()
+                        select new usuario
+                        {
+                            idusuario = r.idusuario,
+                            nombre = $"{r.nombre} {r.appaterno} {r.apmaterno}",
+                            nickname = r.nickname,
+                            email = r.email
+                        }).ToList();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public static usuario returnUsuario(int id)
         {
             try
