@@ -65,7 +65,7 @@
             this.nacionalidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.observacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtBuscarAutos = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.gbGalerias = new System.Windows.Forms.GroupBox();
             this.dgvGaleria = new System.Windows.Forms.DataGridView();
@@ -361,7 +361,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbAutos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.gbAutos.Controls.Add(this.dgvAutos);
-            this.gbAutos.Controls.Add(this.textBox7);
+            this.gbAutos.Controls.Add(this.txtBuscarAutos);
             this.gbAutos.Controls.Add(this.label7);
             this.gbAutos.Location = new System.Drawing.Point(13, 272);
             this.gbAutos.Name = "gbAutos";
@@ -426,12 +426,13 @@
             this.precio.HeaderText = "Precio";
             this.precio.Name = "precio";
             // 
-            // textBox7
+            // txtBuscarAutos
             // 
-            this.textBox7.Location = new System.Drawing.Point(71, 19);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(243, 26);
-            this.textBox7.TabIndex = 1;
+            this.txtBuscarAutos.Location = new System.Drawing.Point(71, 19);
+            this.txtBuscarAutos.Name = "txtBuscarAutos";
+            this.txtBuscarAutos.Size = new System.Drawing.Size(243, 26);
+            this.txtBuscarAutos.TabIndex = 1;
+            this.txtBuscarAutos.TextChanged += new System.EventHandler(this.txtBuscarAutos_TextChanged);
             // 
             // label7
             // 
@@ -545,7 +546,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnPagar;
         private System.Windows.Forms.GroupBox gbAutos;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtBuscarAutos;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox gbGalerias;
         private System.Windows.Forms.DataGridView dgvGaleria;

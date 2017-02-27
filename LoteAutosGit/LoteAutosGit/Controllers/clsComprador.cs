@@ -101,5 +101,20 @@ namespace LoteAutosGit.Controllers
                 throw;
             }
         }
+
+
+        public static comprador llenarComprador(int idComprador)
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return ctx.compradores.Where(x => x.idcomprador == idComprador).FirstOrDefault();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
+

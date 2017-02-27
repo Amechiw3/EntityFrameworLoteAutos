@@ -21,7 +21,6 @@ namespace LoteAutosGit.View
             dgvUsuarios.AutoGenerateColumns = false;
             dgvUsuarios.DataSource = ClsManejadorUsers.getAllListar(txtBuscar.Text);
             main = second;
-            //main.llenarUsuario()
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
@@ -32,8 +31,16 @@ namespace LoteAutosGit.View
 
         private void dgvUsuarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            main.llenarUsuario(int.Parse(this.dgvUsuarios.Rows[e.RowIndex].Cells[0].Value.ToString()));
-            this.Close();
+            if (e.RowIndex > -1)
+            {
+                main.llenarUsuario(int.Parse(this.dgvUsuarios.Rows[e.RowIndex].Cells[0].Value.ToString()));
+                this.Close();
+            }
+            else
+            {
+                errorProvider1.Clear();
+                errorProvider1.SetError(this.dgvUsuarios, "Seleccione un usuario de la lista");
+            }
         }
     }
 }
