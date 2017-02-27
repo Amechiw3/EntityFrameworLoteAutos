@@ -27,52 +27,61 @@ namespace LoteAutosGit.Views
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (validarPropietario())
+            if (pcbFoto.Image != null)
             {
-                if (validarAuto())
+                if (validarPropietario())
                 {
-                    var datos = new propietario();
-                    datos.nombre = txtNombre.Text;
-                    datos.appaterno = txtApPaterno.Text;
-                    datos.apmaterno = txtApMateno.Text;
-                    datos.ine = txtINE.Text;
-                    datos.telefono = txtTelefono.Text;
-                    datos.correo = txtCorreo.Text;
-                    datos.calle = txtCalle.Text;
-                    datos.ncasa = txtNoCasa.Text;
-                    datos.avenida = txtAvenida.Text;
-                    datos.colonia = txtColonia.Text;
-                    datos.ciudad = txtCiudad.Text;
-                    datos.pais = txtPais.Text;
-                    datos.fotografia = Webcam.SaveImageCapture(pcbFoto.Image);
-                    //clsManejoPropietarios.SavePropietario(datos);
+                    if (validarAuto())
+                    {
+                        var datos = new propietario();
+                        datos.nombre = txtNombre.Text;
+                        datos.appaterno = txtApPaterno.Text;
+                        datos.apmaterno = txtApMateno.Text;
+                        datos.ine = txtINE.Text;
+                        datos.telefono = txtTelefono.Text;
+                        datos.correo = txtCorreo.Text;
+                        datos.calle = txtCalle.Text;
+                        datos.ncasa = txtNoCasa.Text;
+                        datos.avenida = txtAvenida.Text;
+                        datos.colonia = txtColonia.Text;
+                        datos.ciudad = txtCiudad.Text;
+                        datos.pais = txtPais.Text;
+                        datos.fotografia = Webcam.SaveImageCapture(pcbFoto.Image);
+                        //clsManejoPropietarios.SavePropietario(datos);
 
-                    //DataModel ctx = new DataModel();
-                    //ctx.propietarios.Attach(datos);
+                        //DataModel ctx = new DataModel();
+                        //ctx.propietarios.Attach(datos);
 
-                    var auto = new auto();
-                    auto.marca = txtMarca.Text;
-                    auto.modelo = txtModelo.Text;
-                    auto.nserie = txtNoSerie.Text;
-                    auto.precio = double.Parse(txtPrecio.Text);
-                    auto.color = txtColor.Text;
-                    auto.nacionalidad = cboNacionalidad.Text;
-                    auto.Observacion = txtObservaciones.Text;
-                    auto.propietarios = datos;
-                    clsManejoAutos.SaveAuto(auto);
-                    this.Close();
+                        var auto = new auto();
+                        auto.marca = txtMarca.Text;
+                        auto.modelo = txtModelo.Text;
+                        auto.nserie = txtNoSerie.Text;
+                        auto.precio = double.Parse(txtPrecio.Text);
+                        auto.color = txtColor.Text;
+                        auto.nacionalidad = cboNacionalidad.Text;
+                        auto.Observacion = txtObservaciones.Text;
+                        auto.propietarios = datos;
+                        clsManejoAutos.SaveAuto(auto);
+                        this.Close();
+                    }
+                    else
+                    {
+                        errorINE.Clear();
+                        errorINE.SetError(txtNoSerie, "Numero de serie duplicado");
+                    }
                 }
                 else
                 {
                     errorINE.Clear();
-                    errorINE.SetError(txtNoSerie, "Numero de serie duplicado");
+                    errorINE.SetError(txtINE, "Codigo de INE duplicado");
                 }
             }
             else
             {
                 errorINE.Clear();
-                errorINE.SetError(txtINE, "Codigo de INE duplicado");
+                errorINE.SetError(pcbFoto, "Introducir foto para continuar");
             }
+
         }
 
         public bool validarAuto()
