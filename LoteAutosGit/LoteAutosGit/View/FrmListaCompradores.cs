@@ -35,7 +35,12 @@ namespace LoteAutosGit.View
 
         private void dgvListaCompradores_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            vMain.colocar = int.Parse(this.dgvListaCompradores.Rows[e.RowIndex].Cells[0].Value.ToString());
+            if (e.RowIndex > -1)
+            {
+                vMain.colocar = int.Parse(this.dgvListaCompradores.Rows[e.RowIndex].Cells[0].Value.ToString());
+                vMain.llenarCliente(int.Parse(this.dgvListaCompradores.Rows[e.RowIndex].Cells[0].Value.ToString()));
+                this.Close();
+            }
         }
     }
 }
