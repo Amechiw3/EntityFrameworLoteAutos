@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using LoteAutosGit.Views;
+using LoteAutosGit.View;
 
 namespace LoteAutosGit
 {

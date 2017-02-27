@@ -82,6 +82,36 @@ namespace LoteAutosGit.Controllers
                 throw;
             }
         }
+
+
+        public int idventa { get; set; }
+        public string fecha { get; set; }
+        public string nombreempleado { get; set; }
+        public string auto { get; set; }
+        public string cliente { get; set; }
+
+        public static List<clsventa> getallventaGr()
+        {
+            try
+            {
+                var ctx = new DataModel();
+                return (from r in ctx.ventas.Include("autos").Include("compradores").Include("usuarios").ToList()
+                        select new clsventa
+                        {
+                            idventa = r.idventa,
+                            fecha = r.fecha.ToShortDateString(),
+                            nombreempleado = $"{r.usuarios.nombre} {r.usuarios.appaterno} {r.usuarios.apmaterno}",
+                            auto = $"{r.autos.modelo} {r.autos.nserie}",
+                            cliente = $"{r.compradores.nombre} {r.compradores.appaterno} {r.compradores.apmaterno}"
+                        }).ToList();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
     }
 }
 

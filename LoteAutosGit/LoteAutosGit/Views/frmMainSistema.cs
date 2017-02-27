@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LoteAutosGit.Controllers;
 
+using LoteAutosGit.View;
+
 namespace LoteAutosGit.Views
 {
     public partial class frmMainSistema : Form
@@ -62,6 +64,7 @@ namespace LoteAutosGit.Views
                 {
                     this.Close();
                 }
+
                 procesarPermisos();
             }
         }
@@ -89,8 +92,27 @@ namespace LoteAutosGit.Views
                     permiso = Convert.ToInt32(tsmi.Tag);
                     //var SessionActiva = frmMainSistema.SessionActiva;
                     tsmi.Enabled = SessionActiva.TienePermisos(permiso);
-                }                                
+                }
+
+                if (obj is Button)
+                {
+                    Button tsmi = (Button)obj;
+                    permiso = Convert.ToInt32(tsmi.Tag);
+                    //var SessionActiva = frmMainSistema.SessionActiva;
+                    tsmi.Enabled = SessionActiva.TienePermisos(permiso);
+                }
             }
+        }
+
+        private void frmMainSistema_Activated(object sender, EventArgs e)
+        {
+            procesarPermisos();
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            var reporte = new frmReporteVentas();
+            reporte.ShowDialog();
         }
     }
 }
