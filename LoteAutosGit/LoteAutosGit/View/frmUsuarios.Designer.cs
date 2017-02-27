@@ -49,6 +49,8 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtRePassword = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cboNivel = new System.Windows.Forms.ComboBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
@@ -60,8 +62,6 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAcceptar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtRePassword = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
@@ -283,6 +283,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos usuario";
             // 
+            // txtRePassword
+            // 
+            this.txtRePassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRePassword.Location = new System.Drawing.Point(201, 101);
+            this.txtRePassword.Name = "txtRePassword";
+            this.txtRePassword.PasswordChar = '☻';
+            this.txtRePassword.Size = new System.Drawing.Size(392, 26);
+            this.txtRePassword.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(197, 78);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(159, 20);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Repita la Contraseña";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -391,25 +410,6 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // txtRePassword
-            // 
-            this.txtRePassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRePassword.Location = new System.Drawing.Point(201, 101);
-            this.txtRePassword.Name = "txtRePassword";
-            this.txtRePassword.PasswordChar = '☻';
-            this.txtRePassword.Size = new System.Drawing.Size(392, 26);
-            this.txtRePassword.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(197, 78);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(159, 20);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Repita la Contraseña";
-            // 
             // btnNuevo
             // 
             this.btnNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -429,7 +429,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(638, 533);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnBuscar);
