@@ -21,12 +21,11 @@ namespace LoteAutosGit.View
 
         private void frmReporteVentas_Load(object sender, EventArgs e)
         {
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.DataSource = clsventa.getallventaGr();
-            
+            this.dgvVentas.AutoGenerateColumns = false;
+            this.dgvVentas.DataSource = clsventa.getallventaGr();
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }

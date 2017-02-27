@@ -386,7 +386,7 @@
             this.precio});
             this.dgvAutos.Location = new System.Drawing.Point(10, 51);
             this.dgvAutos.Name = "dgvAutos";
-            this.dgvAutos.Size = new System.Drawing.Size(992, 164);
+            this.dgvAutos.Size = new System.Drawing.Size(1221, 164);
             this.dgvAutos.TabIndex = 5;
             this.dgvAutos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAutos_CellDoubleClick);
             // 
