@@ -101,7 +101,7 @@ namespace LoteAutosGit.View
             this.Close();
         }
 
-        #region VALIDAR TEXTO
+        #region VALIDAR Controles
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsSeparator(e.KeyChar) && e.KeyChar != 8)
@@ -134,7 +134,7 @@ namespace LoteAutosGit.View
 
         private void txtNoExterno_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetter(e.KeyChar) && !char.IsSeparator(e.KeyChar) && e.KeyChar != 8)
+            if (!char.IsLetter(e.KeyChar) && !char.IsSeparator(e.KeyChar) && e.KeyChar != 8 && !char.IsDigit(e.KeyChar))
             { e.Handled = true; }
         }
 
@@ -170,7 +170,7 @@ namespace LoteAutosGit.View
 
         private void txtCorreo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetter(e.KeyChar) && !char.IsSeparator(e.KeyChar) && e.KeyChar != 8)
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 64 && e.KeyChar !=  46)
             { e.Handled = true; }
         }
 

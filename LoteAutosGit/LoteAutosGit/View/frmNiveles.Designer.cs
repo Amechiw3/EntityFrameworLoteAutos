@@ -60,7 +60,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(424, 12);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(92, 49);
-            this.btnAgregar.TabIndex = 0;
+            this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Tag = "16";
             this.btnAgregar.Text = "Guardar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@
             this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 20);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Nivel";
             // 
             // textBox1
@@ -82,7 +82,7 @@
             this.textBox1.Location = new System.Drawing.Point(12, 35);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(406, 26);
-            this.textBox1.TabIndex = 2;
+            this.textBox1.TabIndex = 1;
             // 
             // dgvNiveles
             // 
@@ -97,7 +97,7 @@
             this.dgvNiveles.Location = new System.Drawing.Point(12, 131);
             this.dgvNiveles.Name = "dgvNiveles";
             this.dgvNiveles.Size = new System.Drawing.Size(504, 139);
-            this.dgvNiveles.TabIndex = 3;
+            this.dgvNiveles.TabIndex = 6;
             this.dgvNiveles.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNiveles_CellDoubleClick);
             // 
             // idnivel
@@ -122,7 +122,7 @@
             this.cboPermisos.Location = new System.Drawing.Point(12, 333);
             this.cboPermisos.Name = "cboPermisos";
             this.cboPermisos.Size = new System.Drawing.Size(504, 28);
-            this.cboPermisos.TabIndex = 4;
+            this.cboPermisos.TabIndex = 8;
             // 
             // label2
             // 
@@ -131,7 +131,7 @@
             this.label2.Location = new System.Drawing.Point(8, 310);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 20);
-            this.label2.TabIndex = 5;
+            this.label2.TabIndex = 7;
             this.label2.Text = "Permisos";
             // 
             // dgvPermisoNegados
@@ -148,7 +148,7 @@
             this.dgvPermisoNegados.Location = new System.Drawing.Point(12, 387);
             this.dgvPermisoNegados.Name = "dgvPermisoNegados";
             this.dgvPermisoNegados.Size = new System.Drawing.Size(504, 112);
-            this.dgvPermisoNegados.TabIndex = 6;
+            this.dgvPermisoNegados.TabIndex = 10;
             // 
             // idpermisonegadonivel
             // 
@@ -183,7 +183,7 @@
             this.btnBloquear.Location = new System.Drawing.Point(326, 505);
             this.btnBloquear.Name = "btnBloquear";
             this.btnBloquear.Size = new System.Drawing.Size(92, 45);
-            this.btnBloquear.TabIndex = 7;
+            this.btnBloquear.TabIndex = 11;
             this.btnBloquear.Tag = "16";
             this.btnBloquear.Text = "Denegar";
             this.btnBloquear.UseVisualStyleBackColor = true;
@@ -196,7 +196,7 @@
             this.label3.Location = new System.Drawing.Point(12, 364);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 20);
-            this.label3.TabIndex = 8;
+            this.label3.TabIndex = 9;
             this.label3.Text = "Permisos negados";
             // 
             // textBox2
@@ -206,7 +206,7 @@
             this.textBox2.Location = new System.Drawing.Point(12, 87);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(406, 26);
-            this.textBox2.TabIndex = 10;
+            this.textBox2.TabIndex = 3;
             // 
             // label4
             // 
@@ -214,7 +214,7 @@
             this.label4.Location = new System.Drawing.Point(12, 64);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 20);
-            this.label4.TabIndex = 9;
+            this.label4.TabIndex = 2;
             this.label4.Text = "Descripcion";
             // 
             // btnNuevoNivel
@@ -223,7 +223,7 @@
             this.btnNuevoNivel.Location = new System.Drawing.Point(424, 78);
             this.btnNuevoNivel.Name = "btnNuevoNivel";
             this.btnNuevoNivel.Size = new System.Drawing.Size(92, 35);
-            this.btnNuevoNivel.TabIndex = 11;
+            this.btnNuevoNivel.TabIndex = 5;
             this.btnNuevoNivel.Tag = "16";
             this.btnNuevoNivel.Text = "Nuevo";
             this.btnNuevoNivel.UseVisualStyleBackColor = true;

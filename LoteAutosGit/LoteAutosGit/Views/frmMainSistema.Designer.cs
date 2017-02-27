@@ -35,6 +35,7 @@
             this.propietariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMIpermisos = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnReporte = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -97,12 +98,25 @@
             this.TSMIpermisos.Text = "Permisos";
             this.TSMIpermisos.Click += new System.EventHandler(this.TSMIpermisos_Click);
             // 
+            // btnReporte
+            // 
+            this.btnReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReporte.Location = new System.Drawing.Point(458, 27);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(126, 32);
+            this.btnReporte.TabIndex = 1;
+            this.btnReporte.Tag = "17";
+            this.btnReporte.Text = "Reporte ventas";
+            this.btnReporte.UseVisualStyleBackColor = true;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
             // frmMainSistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
@@ -114,6 +128,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema Lote de Autos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Activated += new System.EventHandler(this.frmMainSistema_Activated);
             this.Load += new System.EventHandler(this.frmMainSistema_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -131,5 +146,6 @@
         private System.Windows.Forms.ToolStripMenuItem propietariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem TSMIUsuarios;
         private System.Windows.Forms.ToolStripMenuItem TSMIpermisos;
+        private System.Windows.Forms.Button btnReporte;
     }
 }
