@@ -38,7 +38,7 @@ namespace LoteAutosGit.View
         {
             int pago = int.Parse(txtPago.Text);
             int total = int.Parse(txtTotal.Text);
-            if (pago > total)
+            if (pago >= total)
             {
                 clsComprador.SaveComprador(datosComprador);
                 //var datos = clsAuto.returnauto(idautos);
