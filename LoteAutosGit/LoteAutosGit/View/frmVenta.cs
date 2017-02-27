@@ -36,7 +36,13 @@ namespace LoteAutosGit
 
         private void dgvAutos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.dgvGaleria.DataSource = clsAuto.getfoto(int.Parse(this.dgvAutos.Rows[e.RowIndex].Cells[0].Value.ToString()));
+            if (e.RowIndex > -1)
+            {
+                txtSubtotal.Text = this.dgvAutos.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txtIva.Text = (double.Parse(this.dgvAutos.Rows[e.RowIndex].Cells[5].Value.ToString()) * 0.16).ToString();
+                txtTotal.Text = (double.Parse(this.dgvAutos.Rows[e.RowIndex].Cells[5].Value.ToString()) * 1.16).ToString();
+                this.dgvGaleria.DataSource = clsAuto.getfoto(int.Parse(this.dgvAutos.Rows[e.RowIndex].Cells[0].Value.ToString()));
+            }
         }
 
         private void frmVenta_Load(object sender, EventArgs e)
@@ -46,7 +52,24 @@ namespace LoteAutosGit
            // this.dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
-        
+        int idcliente = 0;
+        public void llenarCliente(int idComprador) 
+        {
+
+            var llenar = clsComprador.llenarComprador(idComprador);
+            idcliente = llenar.idcomprador;
+            txtNombre.Text = llenar.nombre;
+            txtAppaterno.Text = llenar.appaterno;
+            txtApMaterno.Text = llenar.apmaterno;
+            txtCurp.Text = llenar.Ine;
+            txtCalle.Text = llenar.calle;
+            txtColonia.Text = llenar.colonia;
+            txtNoCasa.Text = llenar.ncasa;
+            txtAvenida.Text = llenar.avenida;
+            txtCiudad.Text = llenar.ciudad;
+            txtPais.Text = llenar.pais;
+
+        }
 
         
 
@@ -59,6 +82,11 @@ namespace LoteAutosGit
         private void gbComprador_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtBuscarAutos_TextChanged(object sender, EventArgs e)
+        {
+            this.dgvAutos.DataSource = clsAuto.getAllSearch(txtBuscarAutos.Text);
         }
     }
 }
